@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.teacher_banner {
+    position: relative;
+    height: 400px;
+    background: url("../images/teacher_banner.jpg") center no-repeat;
+}
+.teacher_banner_shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 136px;
+    background: url("../images/img_bottom.png") no-repeat;
+}
+
+.teacher_main_box {
+    background-color: #FFF;
+}
+.teacher_main {
+    width: 880px;
+    padding-bottom: 72px;
+    margin: 0 auto;
+}
+.teacher_main > h2 {
+    padding-top: 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #262082;
+    text-align: center;
+}
+.teacher_main > p {
+    line-height: 24px;
+}
+.teacher_main > table {
+    margin-top: 50px;
+    margin-bottom: 27px;
+    border-collapse: collapse;
+}
+.teacher_main > table tr:nth-child(2n) {
+    background-color: #E7E6F4;
+}
+.teacher_main > table th,
+.teacher_main > table td {
+    padding: 7px 14px;
+    text-align: center;
+}
+.teacher_main > table th {
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+.teacher_main > table td:nth-child(1),
+.teacher_main > table td:nth-child(3),
+.teacher_main > table td:nth-child(4) {
+    white-space: nowrap;
+}
+.teacher_main > table td:nth-child(5) {
+    width: 150px;
+}
+.teacher_main > table th:first-child,
+.teacher_main > table td:first-child {
+    padding-left: 20px;
+}
+.teacher_main > table th:last-child,
+.teacher_main > table td:last-child {
+    padding-right: 20px;
+}
+
+
+.content {
+    width: 1200px;
+    margin: -237px auto 40px;
+    overflow:hidden;
+}
+.content > h2 {
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 36px;
+    color: #FFF;
+}
+.content ul {
+    position: relative;
+    width: 100%;
+    height: 420px;
+}
+.content li {
+    position: relative;
+    height: 420px;
+    width:250px;
+    float:left;
+    overflow:hidden;
+    -webkit-transition:all .1s linear;
+       -moz-transition:all .1s linear;
+         -o-transition:all .1s linear;
+        -ms-transition:all .1s linear;
+            transition:all .1s linear;
+    cursor: pointer;
+}
+.content li .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 20;
+}
+.content .big {
+    width:450px;
+}
+.content .big .mask {
+    display: none;
+}
+.content .big > div {
+    display: block;
+}
+.content li > div {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    height: 187px;
+    padding-top: 38px;
+    color: #FFF;
+    background: url("../images/teacher_shadow.png") bottom repeat-x;
+    background-size: auto 187px;
+}
+.content li > div > h4 {
+    display: inline-block;
+    padding: 7px 23px;
+    margin-bottom: 7px;
+    background-color: #262082;
+}
+.content li > div > h4 > span,
+.content li > div > h4 > em {
+    display: block;
+}
+.content li > div > h4 > span {
+    font-size: 24px;
+}
+.content li > div > h4 > em {
+    margin-top: 1px;
+    font-size: 16px;
+}
+.content li > div > div {
+    margin-left: 21px;
+    margin-right: 21px;
+    line-height: 24px;
+}
