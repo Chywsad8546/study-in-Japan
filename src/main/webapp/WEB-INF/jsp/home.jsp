@@ -19,13 +19,13 @@
         <h1><img src="/images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li class="current">
-                <a href="index.html">
+                <a href="/" target="_blank">
                     首页
                     <p>ホームページ</p>
                 </a>
             </li>
             <li>
-                <a href="course.html">
+                <a href="/course.html">
                     精品课程
                     <p>逸品課程</p>
                 </a>
@@ -416,7 +416,7 @@
                 </a>
             </li>
         </ul>
-        <a class="more_link" href="news.html">更多资讯</a>
+        <a class="more_link" href="/news.html">更多资讯</a>
     </div>
 </div>
 <div class="module_box">
@@ -526,7 +526,7 @@
     </div>
 </div>
 
-<script src="js/swiper-3.4.2.min.js"></script>
+<script src="/js/swiper-3.4.2.min.js"></script>
 <script>
     var mySwiper = new Swiper ('.index_banner', {
         autoplay: 3000,
