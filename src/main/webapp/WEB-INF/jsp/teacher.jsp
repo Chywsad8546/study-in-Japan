@@ -1,24 +1,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="<%=basePath%>">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
     <title>优秀师资</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/teacher.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/teacher.css">
 </head>
 <body>
 <div class="header clearfix">
     <div class="header_main clearfix">
-        <h1><img src="/images/logo.png" width="213" height="61" alt="英才"></h1>
+        <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li>
-                <a href="/">
+                <a href="">
                     首页
                     <p>ホームページ</p>
                 </a>
@@ -50,7 +54,7 @@
         </ul>
     </div>
     <div class="header_tel">
-        <img src="/images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
+        <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
     </div>
 </div>
 <div class="teacher_banner">
@@ -61,7 +65,7 @@
     <h2>英才进学塾 御用教师团队</h2>
     <ul>
         <li>
-            <img src="/images/2.jpg">
+            <img src="images/2.jpg">
             <i class="mask"></i>
             <div>
                 <h4>
@@ -76,7 +80,7 @@
             </div>
         </li>
         <li class="big">
-            <img src="/images/1.jpg">
+            <img src="images/1.jpg">
             <i class="mask"></i>
             <div>
                 <h4>
@@ -91,7 +95,7 @@
             </div>
         </li>
         <li>
-            <img src="/images/3.jpg">
+            <img src="images/3.jpg">
             <i class="mask"></i>
             <div>
                 <h4>
@@ -106,7 +110,7 @@
             </div>
         </li>
         <li>
-            <img src="/images/4.jpg">
+            <img src="images/4.jpg">
             <i class="mask"></i>
             <div>
                 <h4>
@@ -200,7 +204,7 @@
     <div class="footer_cont clearfix">
         <div class="footer_main">
             <h4>明德笃实，筑梦名校</h4>
-            <div class="tel"><img src="/images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
+            <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
             <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
             <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
         </div>
@@ -219,9 +223,9 @@
 
 <div class="consult_fix clearfix">
     <div class="consult_show">
-        <img src="/images/free_assess.png" width="23" height="24" alt="免费评估">
+        <img src="images/free_assess.png" width="23" height="24" alt="免费评估">
         <span>免费评估</span>
-        <img src="/images/online_consultant.png" width="24" height="22" alt="在线咨询">
+        <img src="images/online_consultant.png" width="24" height="22" alt="在线咨询">
         <span>在线咨询</span>
     </div>
     <div class="consult_form">
@@ -233,8 +237,8 @@
         </form>
     </div>
 </div>
-<a class="fixed_ad" href="#"><img src="/images/fixed_ad.png" width="90" height="60" alt="2018夏季入学优惠"></a>
-<script src="/js/jquery-1.9.1.min.js"></script>
+<a class="fixed_ad" href="#"><img src="images/fixed_ad.png" width="90" height="60" alt="2018夏季入学优惠"></a>
+<script src="js/jquery-1.9.1.min.js"></script>
 <script>
     function mouseover(e){
         var list = $('#subject li');
