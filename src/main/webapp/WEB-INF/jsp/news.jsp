@@ -36,7 +36,7 @@
                 </a>
             </li>
             <li>
-                <a href="/recommend.html">
+                <a href="/rc/recommend.html?pnow=1&type=0">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>

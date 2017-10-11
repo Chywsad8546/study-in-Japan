@@ -31,13 +31,13 @@
                 </a>
             </li>
             <li>
-                <a href="teacher.html">
+                <a href="/teacher.html">
                     优秀师资
                     <p>優秀な教師</p>
                 </a>
             </li>
             <li>
-                <a href="recommend.html">
+                <a href="/rc/recommend.html?pnow=1&type=0">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>
@@ -58,8 +58,8 @@
 <div class="swiper-container index_banner">
     <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
+        <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
     </div>
     <!-- 分页器 -->
     <div class="swiper-pagination"></div>

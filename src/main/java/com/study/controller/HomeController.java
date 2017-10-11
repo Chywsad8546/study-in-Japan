@@ -1,16 +1,24 @@
 package com.study.controller;
 
+import com.study.dao.RecommendSchoolMapper;
+import com.study.entity.Page;
+import com.study.entity.School;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * Created by Leo on 2017/10/8.
  */
 @Controller
 public class HomeController {
+
 
     private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
@@ -41,15 +49,7 @@ public class HomeController {
         return view;
     }
 
-    /**
-     * 推荐名校
-     * @return
-     */
-    @RequestMapping(value = "/recommend.html")
-    public  ModelAndView recommend() {
-        ModelAndView view = new ModelAndView("recommend");
-        return view;
-    }
+
 
     /**
      * 留学资讯
@@ -61,13 +61,5 @@ public class HomeController {
         return view;
     }
 
-    /**
-     * 资讯详情
-     * @return
-     */
-    @RequestMapping(value = "/news_detail.html")
-    public ModelAndView newDetail() {
-        ModelAndView view = new ModelAndView("news_detail");
-        return view;
-    }
+
 }
