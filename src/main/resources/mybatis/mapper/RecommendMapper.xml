@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.dao.RecommendSchoolMapper">
+  <select id="nodecount" resultType="int">
+      SELECT COUNT(id) FROM university
+      <where>
+          <if test="type!=0">
+              AND schoolnature =#{type}
+          </if>
+      </where>
+  </select>
+
+    <select id="schoollist"  resultType="com.study.entity.School">
+        SELECT id,uname,jpname,schooladress,schoolnature,buldingschooltime,authentication,peoplecount,popularity,img FROM university
+        <where>
+            <if test="school.schoolnature!=0">
+                AND schoolnature =#{school.schoolnature}
+            </if>
+            <if test="school.authentication!=0">
+                AND authentication =#{school.authentication}
+            </if>
+        </where>
+        ORDER BY popularity ASC LIMIT #{page.startNum},#{page.avgPageCount}
+    </select>
+
+    <select id="schoolinfo" resultType="com.study.entity.School">
+        SELECT * FROM  university WHERE id=#{id}
+    </select>
+
+    <select id="tuition" resultType="com.study.entity.Tuition">
+         SELECT  * FROM tuition WHERE sid=#{id}
+    </select>
+
+    <select id="cjrate" resultType="double">
+        SELECT  exchangeratecj FROM exchangerate WHERE id=#{id}
+    </select>
+
+    <select id="allschoolid" resultType="Integer">
+      select id from university;
+    </select>
+
+</mapper>
