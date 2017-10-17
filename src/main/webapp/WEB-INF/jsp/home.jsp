@@ -416,7 +416,7 @@
                 </a>
             </li>
         </ul>
-        <a class="more_link" href="/news.html">更多资讯</a>
+        <a class="more_link" href="/news/morenews.html?pnow=1&type=0">更多资讯</a>
     </div>
 </div>
 <div class="module_box">
