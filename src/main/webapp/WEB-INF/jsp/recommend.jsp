@@ -73,7 +73,7 @@
                     <c:if test="${schools[node]!=null}">
                 <li>
                     <a class="recommend_list_item clearfix" href="/rc/recommend_detail.html?id=${schools[node].id}">
-                        <img src="/images/${schools[node].img}.jpg" width="240" height="180" alt="">
+                        <img src="${url}${schools[node].img}" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>${schools[node].uname}</span>${schools[node].jpname}</h3>

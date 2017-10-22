@@ -59,7 +59,7 @@
         <div class="clearfix">
             <div class="school_msg">
                 <div class="msg_header clearfix">
-                    <img src="/images/${school.img}.png" width="90" height="90" alt="${school.uname}">
+                    <img src="${url}${school.img}" width="90" height="90" alt="${school.uname}">
                     <div>
                         <h2>${school.uname}<em>${school.jpname}</em></h2>
                         <p><i class="recommend_detail_icon"></i>${school.schooladress}</p>

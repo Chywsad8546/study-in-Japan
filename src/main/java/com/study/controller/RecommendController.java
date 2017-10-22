@@ -1,10 +1,7 @@
 package com.study.controller;
 
 import com.study.dao.RecommendSchoolMapper;
-import com.study.entity.Exchangerate;
-import com.study.entity.Page;
-import com.study.entity.School;
-import com.study.entity.Tuition;
+import com.study.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -50,6 +47,7 @@ public class RecommendController {
         view.addObject("type",type);
         view.addObject("schools",schools);
         view.addObject("page",pg);
+        view.addObject("url", WebAdress.url);
 
 
 
@@ -72,9 +70,7 @@ public class RecommendController {
         Integer rid=Integer.valueOf(id);
         List<Integer>allschoolid=rc.allschoolid();
         allschoolid.remove(rid);
-        for (int i:allschoolid) {
-           // System.out.println("allschoolid:"+i);
-        }
+
         int schoolidcount=allschoolid.size();
        // System.out.println(schoolidcount);
 
@@ -106,7 +102,7 @@ public class RecommendController {
         view.addObject("tuition",tuition);
         view.addObject("rate",rate);
         view.addObject("schoolre",schoolre);
-
+        view.addObject("url",WebAdress.url);
         return view;
     }
 

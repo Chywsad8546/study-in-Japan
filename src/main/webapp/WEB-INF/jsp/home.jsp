@@ -1,47 +1,44 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <base href="<%=basePath%>">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
     <title>首页</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
 <div class="header clearfix">
     <div class="header_main clearfix">
-        <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
+        <h1><img src="/images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li class="current">
-                <a href="" target="_blank">
+                <a href="/" target="_blank">
                     首页
                     <p>ホームページ</p>
                 </a>
             </li>
             <li>
-                <a href="course.html">
+                <a href="/course.html">
                     精品课程
                     <p>逸品課程</p>
                 </a>
             </li>
             <li>
-                <a href="teacher.html">
+                <a href="/teacher.html">
                     优秀师资
                     <p>優秀な教師</p>
                 </a>
             </li>
             <li>
-                <a href="recommend.html">
+                <a href="/rc/recommend.html?pnow=1&type=0">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>
@@ -55,15 +52,18 @@
         </ul>
     </div>
     <div class="header_tel">
-        <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
+        <img src="/images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
     </div>
 </div>
 
 <div class="swiper-container index_banner">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <c:forEach var="banner" items="${bannerlist}">
+            <div class="swiper-slide"><img src="${url}${banner.imgurl}" width="100%" alt="${banner.title}"></div>
+        </c:forEach>
+        <%--<div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
+        <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
+        <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>--%>
     </div>
     <!-- 分页器 -->
     <div class="swiper-pagination"></div>
@@ -87,7 +87,7 @@
             <li>
                 <a href="news_detail.html">
                     <div class="advantage_card">
-                        <img src="images/advantage_pic1.png" width="212" height="212" alt="亲临日本">
+                        <img src="/images/advantage_pic1.png" width="212" height="212" alt="亲临日本">
                         <h4>亲临日本</h4>
                         <span>日本に位置する</span>
                         <p>学生将在日本完成所有课程的学习，由英才教师管理学生赴日学习的一切生活学习事宜。</p>
@@ -97,7 +97,7 @@
             <li>
                 <a href="news_detail.html">
                     <div class="advantage_card">
-                        <img src="images/advantage_pic2.png" width="212" height="212" alt="师资优秀">
+                        <img src="/images/advantage_pic2.png" width="212" height="212" alt="师资优秀">
                         <h4>师资优秀</h4>
                         <span>優秀な教師チーム</span>
                         <p>所有英才教师均为国际水准的金牌教师，经验丰富，有众多成功案例积累的独创课程。</p>
@@ -107,7 +107,7 @@
             <li>
                 <a href="news_detail.html">
                     <div class="advantage_card">
-                        <img src="images/advantage_pic3.png" width="212" height="212" alt="精品小班">
+                        <img src="/images/advantage_pic3.png" width="212" height="212" alt="精品小班">
                         <h4>精品小班</h4>
                         <span>少人数教育</span>
                         <p>班级规制，通过对班级规模的限制确保为每一位学员提供周到准确的指导服务。</p>
@@ -117,7 +117,7 @@
             <li>
                 <a href="news_detail.html">
                     <div class="advantage_card">
-                        <img src="images/advantage_pic4.png" width="212" height="212" alt="搭配灵活">
+                        <img src="/images/advantage_pic4.png" width="212" height="212" alt="搭配灵活">
                         <h4>搭配灵活</h4>
                         <span>フレキシブルな教育配置</span>
                         <p>根据学员的不同特点和问题进行个性化指导，为每一个学生找到适合ta的学习方法，实现学生潜力开发的最大化。</p>
@@ -181,7 +181,7 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/case_pic1.png" width="100" height="" alt="刘思垒同学">
+                            <img src="/images/case_pic1.png" width="100" height="" alt="刘思垒同学">
                             <span>刘思垒同学</span>
                         </p>
                         <ul>
@@ -204,7 +204,7 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/case_pic1.png" width="100" height="" alt="刘思垒同学">
+                            <img src="/images/case_pic1.png" width="100" height="" alt="刘思垒同学">
                             <span>刘思垒同学</span>
                         </p>
                         <ul>
@@ -227,7 +227,7 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/case_pic1.png" width="100" height="" alt="刘思垒同学">
+                            <img src="/images/case_pic1.png" width="100" height="" alt="刘思垒同学">
                             <span>刘思垒同学</span>
                         </p>
                         <ul>
@@ -380,14 +380,30 @@
         <i class="module_title_icon news"></i>
         <h2>留学资讯  留学の情報</h2>
         <ul class="mb60">
-            <li>
+            <c:forEach var="item" items="${newslist}">
+                <li>
+                    <a href="news_detail.html">
+                        <div class="side_news_card">
+                            <img src="   ${item.imgurl}" width="320" height="180" alt="">
+                            <h4>${item.ctitle}</h4>
+                            <p>${item.description}</p>
+                            <div class="eye_num_time clearfix">
+                                <span class="jfl"><img class="new_eye_num" src="/images/eye_num_icon.png" width="17" height="12" alt="查看次数">${item.hits}</span>
+                                <span class="jfr">${item.updatetime}</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </c:forEach>
+
+          <%--  <li>
                 <a href="news_detail.html">
                     <div class="side_news_card">
-                        <img src="images/recommend_list_pic.jpg" width="320" height="180" alt="">
+                        <img src="/images/recommend_list_pic.jpg" width="320" height="180" alt="">
                         <h4>日本经营学专业优势介绍</h4>
                         <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                         <div class="eye_num_time clearfix">
-                            <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
+                            <span class="jfl"><img class="new_eye_num" src="/images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
                             <span class="jfr">2017-10-01 10:33</span>
                         </div>
                     </div>
@@ -396,31 +412,21 @@
             <li>
                 <a href="news_detail.html">
                     <div class="side_news_card">
-                        <img src="images/recommend_list_pic.jpg" width="320" height="180" alt="">
+                        <img src="/images/recommend_list_pic.jpg" width="320" height="180" alt="">
                         <h4>日本经营学专业优势介绍</h4>
                         <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                         <div class="eye_num_time clearfix">
-                            <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
+                            <span class="jfl"><img class="new_eye_num" src="/images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
                             <span class="jfr">2017-10-01 10:33</span>
                         </div>
                     </div>
                 </a>
-            </li>
-            <li>
-                <a href="news_detail.html">
-                    <div class="side_news_card">
-                        <img src="images/recommend_list_pic.jpg" width="320" height="180" alt="">
-                        <h4>日本经营学专业优势介绍</h4>
-                        <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
-                        <div class="eye_num_time clearfix">
-                            <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
-                            <span class="jfr">2017-10-01 10:33</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
+            </li>--%>
         </ul>
-        <a class="more_link" href="news.html">更多资讯</a>
+
+
+        <a class="more_link" href="/news/morenews.html">更多资讯</a>
+
     </div>
 </div>
 <div class="module_box">
@@ -513,7 +519,7 @@
     <div class="footer_cont clearfix">
         <div class="footer_main">
             <h4>明德笃实，筑梦名校</h4>
-            <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
+            <div class="tel"><img src="/images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
             <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
             <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
         </div>
@@ -530,7 +536,7 @@
     </div>
 </div>
 
-<script src="js/swiper-3.4.2.min.js"></script>
+<script src="/js/swiper-3.4.2.min.js"></script>
 <script>
     var mySwiper = new Swiper ('.index_banner', {
         autoplay: 3000,

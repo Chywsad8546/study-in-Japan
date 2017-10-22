@@ -59,9 +59,9 @@
     <div class="tabs_item">
         <ul>
             <li <c:if test="${type==0}">class="current"</c:if>><a href="/news/morenews.html">全部资讯<span>日文名字</span></a></li>
-            <li <c:if test="${type==38}">class="current"</c:if>><a href="/news/morenews.html?type=38">留学资讯<span>日文名字</span></a></li>
-            <li <c:if test="${type==39}">class="current"</c:if>><a href="/news/morenews.html?type=39">招生资讯<span>日文名字</span></a></li>
-            <li <c:if test="${type==40}">class="current"</c:if>><a href="/news/morenews.html?type=40">学习资料<span>日文名字</span></a></li>
+            <li <c:if test="${type==43}">class="current"</c:if>><a href="/news/morenews.html?type=43">留学资讯<span>日文名字</span></a></li>
+            <li <c:if test="${type==46}">class="current"</c:if>><a href="/news/morenews.html?type=46">招生资讯<span>日文名字</span></a></li>
+            <li <c:if test="${type==47}">class="current"</c:if>><a href="/news/morenews.html?type=47">学习资料<span>日文名字</span></a></li>
         </ul>
     </div>
 </div>
@@ -72,7 +72,7 @@
                 <c:forEach var="article" items="${articlelist}">
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/${article.imgurl}.jpg" width="200" height="150" alt="">
+                        <img src="${url}${article.imgurl}" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>${article.ctitle}</h3>
                             <p>${article.description}</p>
