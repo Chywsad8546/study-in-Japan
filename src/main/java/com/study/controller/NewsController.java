@@ -3,6 +3,7 @@ package com.study.controller;
 import com.study.dao.NewsMapper;
 import com.study.entity.Article;
 import com.study.entity.Page;
+import com.study.entity.WebAdress;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,6 +47,7 @@ public class NewsController {
               modelAndView.addObject("type",type);
               modelAndView.addObject("page",pg);
               modelAndView.addObject("articlelist",articlelist);
+              modelAndView.addObject("url", WebAdress.url);
 
           return modelAndView;
     }
