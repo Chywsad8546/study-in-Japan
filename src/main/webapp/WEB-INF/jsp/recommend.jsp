@@ -174,7 +174,7 @@
 
 
                 <c:choose>
-                    <c:when test="${page.pageCount==1}">
+                    <c:when test="${page.pageCount==1||page.pageCount==0}">
                         <div class="pagination_cont">
                             <a href="#" onclick="return false;" class="disable">&laquo;</a>
                             <a href="#" onclick="return false;" class="disable">&lsaquo;</a>

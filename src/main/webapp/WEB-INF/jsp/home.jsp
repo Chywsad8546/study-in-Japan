@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -57,9 +58,12 @@
 
 <div class="swiper-container index_banner">
     <div class="swiper-wrapper">
+        <c:forEach var="banner" items="${bannerlist}">
+            <div class="swiper-slide"><img src="${banner.imgurl}" width="100%" alt="${banner.title}"></div>
+        </c:forEach>
+        <%--<div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
         <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
-        <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
-        <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
+        <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>--%>
     </div>
     <!-- 分页器 -->
     <div class="swiper-pagination"></div>
@@ -376,7 +380,23 @@
         <i class="module_title_icon news"></i>
         <h2>留学资讯  留学の情報</h2>
         <ul class="mb60">
-            <li>
+            <c:forEach var="item" items="${newslist}">
+                <li>
+                    <a href="news_detail.html">
+                        <div class="side_news_card">
+                            <img src="/images/${item.imgurl}.jpg" width="320" height="180" alt="">
+                            <h4>${item.ctitle}</h4>
+                            <p>${item.description}</p>
+                            <div class="eye_num_time clearfix">
+                                <span class="jfl"><img class="new_eye_num" src="/images/eye_num_icon.png" width="17" height="12" alt="查看次数">${item.hits}</span>
+                                <span class="jfr">${item.updatetime}</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </c:forEach>
+
+          <%--  <li>
                 <a href="news_detail.html">
                     <div class="side_news_card">
                         <img src="/images/recommend_list_pic.jpg" width="320" height="180" alt="">
@@ -401,22 +421,12 @@
                         </div>
                     </div>
                 </a>
-            </li>
-            <li>
-                <a href="news_detail.html">
-                    <div class="side_news_card">
-                        <img src="/images/recommend_list_pic.jpg" width="320" height="180" alt="">
-                        <h4>日本经营学专业优势介绍</h4>
-                        <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
-                        <div class="eye_num_time clearfix">
-                            <span class="jfl"><img class="new_eye_num" src="/images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
-                            <span class="jfr">2017-10-01 10:33</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
+            </li>--%>
         </ul>
-        <a class="more_link" href="/news/morenews.html?pnow=1&type=0">更多资讯</a>
+
+
+        <a class="more_link" href="/news/morenews.html">更多资讯</a>
+
     </div>
 </div>
 <div class="module_box">
