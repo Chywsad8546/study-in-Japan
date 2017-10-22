@@ -34,13 +34,13 @@
                 </a>
             </li>
             <li>
-                <a href="/teacher.html">
+                <a href="teacher.html">
                     优秀师资
                     <p>優秀な教師</p>
                 </a>
             </li>
             <li>
-                <a href="/rc/recommend.html?pnow=1&type=0">
+                <a href="rc/recommend.html?pnow=1&type=0">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>
