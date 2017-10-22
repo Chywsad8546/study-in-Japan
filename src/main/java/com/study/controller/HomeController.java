@@ -1,6 +1,7 @@
 package com.study.controller;
 
-import com.study.dao.HomeMapper;import com.study.dao.RecommendSchoolMapper;
+import com.study.dao.HomeMapper;
+import com.study.dao.RecommendSchoolMapper;
 import com.study.entity.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -66,12 +67,6 @@ public class HomeController {
     }
 
 
-
-    @RequestMapping(value = "/recommend_detail.html")
-    public  ModelAndView recommendDetail() {
-        ModelAndView view = new ModelAndView("recommend_detail");
-        return view;
-    }
 
     /**
      * 留学资讯
