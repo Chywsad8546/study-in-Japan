@@ -22,25 +22,25 @@
         <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li>
-                <a href="">
+                <a href="/index.html">
                     首页
                     <p>ホームページ</p>
                 </a>
             </li>
             <li>
-                <a href="course.html">
+                <a href="/course.html">
                     精品课程
                     <p>逸品課程</p>
                 </a>
             </li>
             <li>
-                <a href="teacher.html">
+                <a href="/teacher.html">
                     优秀师资
                     <p>優秀な教師</p>
                 </a>
             </li>
             <li>
-                <a href="recommend.html">
+                <a href="/rc/recommend.html?pnow=1&type=0">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>

@@ -54,6 +54,6 @@
         <!--注入sqlSessionFactory-->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!--给出需要扫描DAO接口包-->
-        <property name="basePackage" value="com.topweb.dao"/>
+        <property name="basePackage" value="com.study.dao"/>
     </bean>
 </beans>

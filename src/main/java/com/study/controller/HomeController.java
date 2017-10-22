@@ -1,10 +1,18 @@
 package com.study.controller;
 
+import com.study.dao.HomeMapper;
+import com.study.dao.RecommendSchoolMapper;
+import com.study.entity.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Leo on 2017/10/8.
@@ -12,11 +20,28 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
+
     private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+
+    @Autowired
+    private HomeMapper hm;
 
     @RequestMapping(value = "/")
     public ModelAndView homePage() {
         ModelAndView view = new ModelAndView("home");
+
+        List<Article>newslist=hm.newslist(new ImformationFinal());
+
+
+        Img img=new Img();
+        img.setClass1(41);
+        List<Img> bannerList=hm.imglist(img);
+        for (Article item:newslist) {
+            System.out.println(item.getId());
+        }
+        view.addObject("bannerlist",bannerList);
+        view.addObject("newslist",newslist);
+
         logger.trace("Welcome to Study-In-Japan!");
         return view;
     }
@@ -41,15 +66,7 @@ public class HomeController {
         return view;
     }
 
-    /**
-     * 推荐名校
-     * @return
-     */
-    @RequestMapping(value = "/recommend.html")
-    public  ModelAndView recommend() {
-        ModelAndView view = new ModelAndView("recommend");
-        return view;
-    }
+
 
     @RequestMapping(value = "/recommend_detail.html")
     public  ModelAndView recommendDetail() {
@@ -67,13 +84,5 @@ public class HomeController {
         return view;
     }
 
-    /**
-     * 资讯详情
-     * @return
-     */
-    @RequestMapping(value = "/news_detail.html")
-    public ModelAndView newDetail() {
-        ModelAndView view = new ModelAndView("news_detail");
-        return view;
-    }
+
 }

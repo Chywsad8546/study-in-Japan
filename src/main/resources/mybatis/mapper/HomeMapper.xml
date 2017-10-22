@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.dao.HomeMapper">
+
+    <select id="imglist" resultType="com.study.entity.Img">
+        SELECT * from cms_img
+        <where>
+            <if test="img.class1!=0">
+                AND class1=#{img.class1}
+            </if>
+            <if test="img.class2!=0">
+                AND class2=#{img.class2}
+            </if>
+            AND access=1
+        </where>
+         ORDER BY recommend DESC , top DESC , updatetime DESC
+    </select>
+
+    <select id="newslist" resultType="com.study.entity.Article">
+        SELECT * FROM cms_article WHERE  id IN(#{im.id1},#{im.id2},#{im.id3});
+    </select>
+</mapper>
