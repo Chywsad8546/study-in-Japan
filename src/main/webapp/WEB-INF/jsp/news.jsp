@@ -1,9 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="<%=basePath%>"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
@@ -16,22 +20,22 @@
 <body>
 <div class="header clearfix">
     <div class="header_main clearfix">
-        <h1><img src="/images/logo.png" width="213" height="61" alt="英才"></h1>
+        <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li>
-                <a href="/">
+                <a href="">
                     首页
                     <p>ホームページ</p>
                 </a>
             </li>
             <li>
-                <a href="/course.html">
+                <a href="course.html">
                     精品课程
                     <p>逸品課程</p>
                 </a>
             </li>
             <li>
-                <a href="/teacher.html">
+                <a href="teacher.html">
                     优秀师资
                     <p>優秀な教師</p>
                 </a>
@@ -51,7 +55,7 @@
         </ul>
     </div>
     <div class="header_tel">
-        <img src="/images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
+        <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
     </div>
 </div>
 <div class="news_banner" id="fixed_bottom_header">
@@ -86,12 +90,12 @@
                 </c:forEach>
                 <%--<li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -99,12 +103,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -112,12 +116,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -187,12 +191,12 @@
             <ul>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍（留学资讯）</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -200,12 +204,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -213,12 +217,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -226,12 +230,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -258,12 +262,12 @@
             <ul>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍（招生资讯）</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -271,12 +275,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -284,12 +288,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -297,12 +301,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -329,12 +333,12 @@
             <ul>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍（学习资料）</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -342,12 +346,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -355,12 +359,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -368,12 +372,12 @@
                 </li>
                 <li>
                     <a class="news_list_item clearfix" href="news_detail.html">
-                        <img src="/images/news_list_pic.jpg" width="200" height="150" alt="">
+                        <img src="images/news_list_pic.jpg" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>日本经营学专业优势介绍</h3>
                             <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">1024</span>
                                 <span class="ml20">2017-10-01 10:33</span>
                             </div>
                         </div>
@@ -438,7 +442,7 @@
     <div class="footer_cont clearfix">
         <div class="footer_main">
             <h4>明德笃实，筑梦名校</h4>
-            <div class="tel"><img src="/images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
+            <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
             <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
             <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
         </div>
@@ -454,9 +458,9 @@
         </ul>
     </div>
 </div>
-<a class="fixed_ad" href="#"><img src="/images/fixed_ad.png" width="90" height="60" alt="2018夏季入学优惠"></a>
+<a class="fixed_ad" href="#"><img src="images/fixed_ad.png" width="90" height="60" alt="2018夏季入学优惠"></a>
 
-<script src="/js/jquery-1.9.1.min.js"></script>
-<script src="/js/main.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

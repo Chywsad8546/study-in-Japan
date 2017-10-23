@@ -69,6 +69,12 @@ public class HomeController {
 
 
 
+    @RequestMapping(value = "/recommend_detail.html")
+    public  ModelAndView recommendDetail() {
+        ModelAndView view = new ModelAndView("recommend_detail");
+        return view;
+    }
+
     /**
      * 留学资讯
      * @return

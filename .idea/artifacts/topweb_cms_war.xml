@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="topweb-cms:war">
+    <output-path>$PROJECT_DIR$/../topweb-cms/target</output-path>
+    <root id="archive" name="topweb-cms.war">
+      <element id="artifact" artifact-name="topweb-cms:war exploded" />
+    </root>
+  </artifact>
+</component>

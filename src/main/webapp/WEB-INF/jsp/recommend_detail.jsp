@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,35 +20,35 @@
             <h1><img src="/images/logo.png" width="213" height="61" alt="英才"></h1>
             <ul>
                 <li>
-                    <a href="../../../../../../../topweb-cms-x/private_school/index.html">
-                        首页
-                        <p>ホームページ</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../../../../../../topweb-cms-x/private_school/course.html">
-                        精品课程
-                        <p>逸品課程</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../../../../../../topweb-cms-x/private_school/teacher.html">
-                        优秀师资
-                        <p>優秀な教師</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../../../../../../topweb-cms-x/private_school/recommend.html">
-                        推荐名校
-                        <p>名門校を推薦する</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        关于英才
-                        <p>英才について</p>
-                    </a>
-                </li>
+                <a href="">
+                    首页
+                    <p>ホームページ</p>
+                </a>
+            </li>
+            <li>
+                <a href="course.html">
+                    精品课程
+                    <p>逸品課程</p>
+                </a>
+            </li>
+            <li>
+                <a href="teacher.html">
+                    优秀师资
+                    <p>優秀な教師</p>
+                </a>
+            </li>
+            <li>
+                <a href="recommend.html">
+                    推荐名校
+                    <p>名門校を推薦する</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    关于英才
+                    <p>英才について</p>
+                </a>
+            </li>
             </ul>
         </div>
         <div class="header_tel">
