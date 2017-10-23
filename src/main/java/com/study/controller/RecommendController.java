@@ -5,6 +5,8 @@ import com.study.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -25,11 +27,12 @@ public class RecommendController {
      * @return
      */
     @RequestMapping(value = "/recommend.html")
-    public ModelAndView recommend(HttpServletRequest request) {
+    public ModelAndView recommend(HttpServletRequest request,
+                                  @RequestParam(value = "pnow", defaultValue = "1", required = false) int pagenow,
+                                  @RequestParam(value = "type", defaultValue = "0", required = false) int type) {
         ModelAndView view = new ModelAndView("recommend");
 
-        int pagenow=Integer.parseInt(request.getParameter("pnow"));
-        int type=Integer.parseInt(request.getParameter("type"));
+
 
 
 

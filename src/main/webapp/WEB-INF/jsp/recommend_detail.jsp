@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li>
-                <a href="recommend.html">
+                <a href="rc/recommend.html">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>
@@ -186,7 +186,7 @@
         <ul class="mb60 clearfix">
             <c:forEach var="node" items="${schoolre}">
             <li>
-                <a href="/rc/recommend_detail.html?id=${node.id}">
+                <a href="rc/recommend_detail.html?id=${node.id}">
                     <div class="side_news_card hot_item">
                         <img src="/images/${node.img}.jpg" width="240" height="180" alt="">
                         <h4>${node.uname}</h4>

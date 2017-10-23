@@ -26,4 +26,13 @@
         </where>
     </select>
 
+    <select id="newsdetail" resultType="com.study.entity.Article">
+        SELECT * FROM cms_article WHERE id=#{id}
+    </select>
+
+    <update id="hitadd">
+        UPDATE cms_article SET hits=hits+1 WHERE id=#{id};
+    </update>
+
+
 </mapper>

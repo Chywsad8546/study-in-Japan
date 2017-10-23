@@ -52,4 +52,15 @@ public class NewsController {
           return modelAndView;
     }
 
+    @RequestMapping(value = "/newsdetail.html" )
+    public ModelAndView newsdetail(HttpServletRequest request){
+             ModelAndView view=new ModelAndView("news_detail");
+           int id=Integer.parseInt(request.getParameter("id"));
+           int hitadd=nm.hitadd(id);
+           Article article=nm.newsdetail(id);
+           view.addObject("article",article);
+           view.addObject("url", WebAdress.url);
+return view;
+    }
+
 }

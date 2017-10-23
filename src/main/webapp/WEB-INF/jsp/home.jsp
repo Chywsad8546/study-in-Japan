@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li>
-                <a href="rc/recommend.html?pnow=1&type=0">
+                <a href="rc/recommend.html">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>
@@ -386,7 +386,7 @@
         <ul class="mb60">
             <c:forEach var="item" items="${newslist}">
                 <li>
-                    <a href="news_detail.html">
+                    <a href="news/newsdetail.html?id=${item.id}">
                         <div class="side_news_card">
                             <img src="   ${item.imgurl}" width="320" height="180" alt="">
                             <h4>${item.ctitle}</h4>
@@ -427,7 +427,7 @@
                 </a>
             </li>--%>
         </ul>
-        <a class="more_link" href="/news/morenews.html">更多资讯</a>
+        <a class="more_link" href="news/morenews.html">更多资讯</a>
     </div>
 </div>
 <div class="module_box">
