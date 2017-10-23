@@ -14,8 +14,8 @@
     <title>资讯</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/   css/news_recommend.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/news_recommend.css">
 </head>
 <body>
 <div class="header clearfix">
@@ -81,7 +81,7 @@
                             <h3>${article.ctitle}</h3>
                             <p>${article.description}</p>
                             <div class="num_time">
-                                <span><img src="/images/eye_num_icon.png" width="23" height="16" alt="查看数量">${article.hits}</span>
+                                <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">${article.hits}</span>
                                 <span class="ml20">${article.updatetime}</span>
                             </div>
                         </div>
