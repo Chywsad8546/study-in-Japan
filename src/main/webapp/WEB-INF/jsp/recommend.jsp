@@ -81,7 +81,7 @@
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>${schools[node].uname}</span>${schools[node].jpname}</h3>
-                                <p><img src="/images/address_icon.png" width="12" height="16" alt="地址">${schools[node].schooladress}</p>
+                                <p><img src="images/address_icon.png" width="12" height="16" alt="地址">${schools[node].schooladress}</p>
                                 <dl class="clearfix">
                                     <dd>院校性质：<em><c:choose>
                                         <c:when test="${schools[node].schoolnature== 1}">国立</c:when>
@@ -97,7 +97,7 @@
                                 </dl>
                             </div>
                             <div class="school_ranking">
-                                <p><img src="/images/ranking_gray.png" width="16" height="16" alt="排名">CWUR日本大学排名</p>
+                                <p><img src="images/ranking_gray.png" width="16" height="16" alt="排名">CWUR日本大学排名</p>
                                 <strong>${node+1+page.startNum}</strong>
                             </div>
                             <div class="popularity_time">人气：<span>${schools[node].popularity}</span></div>
@@ -246,7 +246,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学（国立）</span>日本名字</h3>
@@ -269,7 +269,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学</span>日本名字</h3>
@@ -291,7 +291,7 @@
                 </li>
                 <li>
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
 
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
@@ -315,7 +315,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学</span>日本名字</h3>
@@ -357,7 +357,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学（公立）</span>日本名字</h3>
@@ -379,7 +379,7 @@
                 </li>
                 <li>
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
 
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
@@ -403,7 +403,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学</span>日本名字</h3>
@@ -426,7 +426,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
 
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
@@ -469,7 +469,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学（私立）</span>日本名字</h3>
@@ -492,7 +492,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学</span>日本名字</h3>
@@ -515,7 +515,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
 
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
@@ -539,7 +539,7 @@
                 <li>
 
                     <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
+                        <img src="images/recommend_list_pic.jpg" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>早稻田大学</span>日本名字</h3>
@@ -594,7 +594,7 @@
 
 <div class="assessment">
     <div class="assessment_cont clearfix">
-        <img src="/images/assessment_img.png" width="451" height="387" alt="JAPAN">
+        <img src="images/assessment_img.png" width="451" height="387" alt="JAPAN">
         <div class="assessment_form">
             <h2>赴日留学免费评估</h2>
             <form action="">
