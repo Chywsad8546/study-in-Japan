@@ -41,7 +41,7 @@
                 </a>
             </li>
             <li class="current">
-                <a href="rc/recommend.html?pnow=1&type=0">
+                <a href="rc/recommend.html">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>
@@ -62,10 +62,10 @@
     <div class="tab_banner_shadow"></div>
     <div class="tabs_item">
         <ul>
-            <li  <c:if test="${type==0}">class="current"</c:if>><a href="/rc/recommend.html?pnow=1&type=0">全部大学<span>日文名字</span></a></li>
-            <li  <c:if test="${type==1}">class="current"</c:if>><a href="/rc/recommend.html?pnow=1&type=1">国立大学<span>日文名字</span></a></li>
-            <li  <c:if test="${type==2}">class="current"</c:if>><a href="/rc/recommend.html?pnow=1&type=2">私立大学<span>日文名字</span></a></li>
-            <li  <c:if test="${type==3}">class="current"</c:if>><a href="/rc/recommend.html?pnow=1&type=3">公历大学<span>日文名字</span></a></li>
+            <li  <c:if test="${type==0}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=0">全部大学<span>日文名字</span></a></li>
+            <li  <c:if test="${type==1}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=1">国立大学<span>日文名字</span></a></li>
+            <li  <c:if test="${type==2}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=2">私立大学<span>日文名字</span></a></li>
+            <li  <c:if test="${type==3}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=3">公历大学<span>日文名字</span></a></li>
         </ul>
     </div>
 </div>
@@ -76,7 +76,7 @@
                 <c:forEach  var="node" begin="0" end="3" >
                     <c:if test="${schools[node]!=null}">
                 <li>
-                    <a class="recommend_list_item clearfix" href="/rc/recommend_detail.html?id=${schools[node].id}">
+                    <a class="recommend_list_item clearfix" href="rc/recommend_detail.html?id=${schools[node].id}">
                         <img src="${url}${schools[node].img}" width="240" height="180" alt="">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
@@ -199,15 +199,15 @@
                             <div class="page_num">
                                 <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
                             </div>
-                            <a href="/rc/recommend.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
-                            <a href="/rc/recommend.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
+                            <a href="rc/recommend.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
+                            <a href="rc/recommend.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
                         </div>
                     </c:when>
 
                     <c:when test="${page.pageNow== page.pageCount}">
                         <div class="pagination_cont">
-                            <a href="/rc/recommend.html?pnow=1&type=${type}">&laquo;</a>
-                            <a href="/rc/recommend.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
+                            <a href="rc/recommend.html?pnow=1&type=${type}">&laquo;</a>
+                            <a href="rc/recommend.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
                             <div class="page_num">
                                 <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
                             </div>
@@ -219,13 +219,13 @@
 
                     <c:otherwise>
                         <div class="pagination_cont">
-                            <a href="/rc/recommend.html?pnow=1&type=${type}">&laquo;</a>
-                            <a href="/rc/recommend.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
+                            <a href="rc/recommend.html?pnow=1&type=${type}">&laquo;</a>
+                            <a href="rc/recommend.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
                             <div class="page_num">
                                 <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
                             </div>
-                            <a href="/rc/recommend.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
-                            <a href="/rc/recommend.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
+                            <a href="rc/recommend.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
+                            <a href="rc/recommend.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
                         </div>
                      </c:otherwise>
 

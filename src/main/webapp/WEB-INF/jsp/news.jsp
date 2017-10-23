@@ -41,7 +41,7 @@
                 </a>
             </li>
             <li>
-                <a href="/rc/recommend.html?pnow=1&type=0">
+                <a href="rc/recommend.html">
                     推荐名校
                     <p>名門校を推薦する</p>
                 </a>
@@ -62,10 +62,10 @@
     <div class="tab_banner_shadow"></div>
     <div class="tabs_item">
         <ul>
-            <li <c:if test="${type==0}">class="current"</c:if>><a href="/news/morenews.html">全部资讯<span>日文名字</span></a></li>
-            <li <c:if test="${type==43}">class="current"</c:if>><a href="/news/morenews.html?type=43">留学资讯<span>日文名字</span></a></li>
-            <li <c:if test="${type==46}">class="current"</c:if>><a href="/news/morenews.html?type=46">招生资讯<span>日文名字</span></a></li>
-            <li <c:if test="${type==47}">class="current"</c:if>><a href="/news/morenews.html?type=47">学习资料<span>日文名字</span></a></li>
+            <li <c:if test="${type==0}">class="current"</c:if>><a href="news/morenews.html">全部资讯<span>日文名字</span></a></li>
+            <li <c:if test="${type==43}">class="current"</c:if>><a href="news/morenews.html?type=43">留学资讯<span>日文名字</span></a></li>
+            <li <c:if test="${type==46}">class="current"</c:if>><a href="news/morenews.html?type=46">招生资讯<span>日文名字</span></a></li>
+            <li <c:if test="${type==47}">class="current"</c:if>><a href="news/morenews.html?type=47">学习资料<span>日文名字</span></a></li>
         </ul>
     </div>
 </div>
@@ -75,7 +75,7 @@
             <ul>
                 <c:forEach var="article" items="${articlelist}">
                 <li>
-                    <a class="news_list_item clearfix" href="news_detail.html">
+                    <a class="news_list_item clearfix" href="news/newsdetail.html?id=${article.id}">
                         <img src="${url}${article.imgurl}" width="200" height="150" alt="">
                         <div class="news_item_cont">
                             <h3>${article.ctitle}</h3>
@@ -149,15 +149,15 @@
                             <div class="page_num">
                                 <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
                             </div>
-                            <a href="/news/morenews.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
-                            <a href="/news/morenews.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
+                            <a href="news/morenews.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
+                            <a href="news/morenews.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
                         </div>
                     </c:when>
 
                     <c:when test="${page.pageNow== page.pageCount}">
                         <div class="pagination_cont">
-                            <a href="/news/morenews.html?pnow=1&type=${type}">&laquo;</a>
-                            <a href="/news/morenews.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
+                            <a href="news/morenews.html?pnow=1&type=${type}">&laquo;</a>
+                            <a href="news/morenews.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
                             <div class="page_num">
                                 <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
                             </div>
@@ -169,13 +169,13 @@
 
                     <c:otherwise>
                         <div class="pagination_cont">
-                            <a href="/news/morenews.html?pnow=1&type=${type}">&laquo;</a>
-                            <a href="/news/morenews.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
+                            <a href="news/morenews.html?pnow=1&type=${type}">&laquo;</a>
+                            <a href="news/morenews.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
                             <div class="page_num">
                                 <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
                             </div>
-                            <a href="/news/morenews.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
-                            <a href="/news/morenews.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
+                            <a href="news/morenews.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
+                            <a href="news/morenews.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
                         </div>
                     </c:otherwise>
 

@@ -13,4 +13,6 @@ import java.util.List;
 public interface NewsMapper {
     List<Article> newslist(@Param("article")Article article, @Param("page")Page page);
     int newscount(@Param("article")Article article);
+    Article newsdetail(@Param("id") int id);
+    int hitadd(@Param("id")int id);
 }
