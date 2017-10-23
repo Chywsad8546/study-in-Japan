@@ -392,7 +392,7 @@
                             <h4>${item.ctitle}</h4>
                             <p>${item.description}</p>
                             <div class="eye_num_time clearfix">
-                                <span class="jfl"><img class="new_eye_num" src="/images/eye_num_icon.png" width="17" height="12" alt="查看次数">${item.hits}</span>
+                                <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">${item.hits}</span>
                                 <span class="jfr">${item.updatetime}</span>
                             </div>
                         </div>
