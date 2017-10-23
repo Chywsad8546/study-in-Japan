@@ -3,7 +3,7 @@
 <mapper namespace="com.study.dao.NewsMapper">
 
     <select id="newslist" resultType="com.study.entity.Article">
-         SELECT id,ctitle,imgurl,hits,updatetime,description FROM cms_article
+         SELECT id,title,imgurl,hits,updatetime,description FROM cms_article
          <where>
              <if test="article.class1!=0">
                  AND class1=#{article.class1}
@@ -11,7 +11,7 @@
              <if test="article.class2!=0">
              AND class2=#{article.class2}
          </if>
-             AND display=0
+             AND display=1   AND del=0
          </where>
         ORDER BY recommend DESC , top DESC , updatetime DESC LIMIT #{page.startNum},#{page.avgPageCount}
     </select>
@@ -22,7 +22,7 @@
             <if test="article.class2!=0">
                 AND class2=#{article.class2}
             </if>
-            AND display=0
+            AND display=1 AND del=0
         </where>
     </select>
 

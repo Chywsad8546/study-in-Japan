@@ -36,12 +36,19 @@ public class HomeController {
         Img img=new Img();
         img.setClass1(BannerClassId.class1id);
         List<Img> bannerList=hm.imglist(img);
-        for (Article item:newslist) {
+       /* for (Article item:newslist) {
             System.out.println(item.getId());
+        }*/
+        for (int i=0;i<bannerList.size();i++){
+            Img it= bannerList.get(i);
+            it.setImgurl(it.getImgurl().replaceAll("\\.\\.\\/",WebAdress.url));
+            bannerList.set(i,it);
+          //    System.out.println(bannerList.get(i).getImgurl());
         }
+
         view.addObject("bannerlist",bannerList);
         view.addObject("newslist",newslist);
-        view.addObject("url",WebAdress.url);
+       // view.addObject("url",WebAdress.url);
 
         logger.trace("Welcome to Study-In-Japan!");
         return view;

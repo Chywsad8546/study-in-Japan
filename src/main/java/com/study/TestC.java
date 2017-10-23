@@ -14,11 +14,9 @@ import java.util.Random;
 public class TestC {
     @Test
     public void t1(){
-        int schoolrandom[]= new int[4] ;
-      schoolrandom= bijiao(schoolrandom,10);
-       for (int i=0;i>schoolrandom.length;i++){
-           System.out.println(schoolrandom[i]);
-       }
+       String i="aabbc";
+       String ir=i.replaceAll("aa","nn");
+        System.out.println(ir);
     }
 
     public int[] bijiao(int num[],int idcount){

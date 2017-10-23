@@ -38,16 +38,22 @@ public class NewsController {
         pg.setPageNow(pagenow);
         pg.setStartNum((pagenow-1)*pg.getAvgPageCount());
         int nodeCount=nm.newscount(article);
-        System.out.println(nodeCount);
+        //System.out.println(nodeCount);
         pg.setNodeCount(nodeCount);
         pg.setPageCount(nodeCount%pg.getAvgPageCount()==0?nodeCount/pg.getAvgPageCount():nodeCount/pg.getAvgPageCount()+1);
 
         List<Article>articlelist=nm.newslist(article,pg);
+          for (int i=0;i<articlelist.size();i++){
+             Article it= articlelist.get(i);
+             it.setImgurl(it.getImgurl().replaceAll("\\.\\.\\/",WebAdress.url));
+             articlelist.set(i,it);
+            //  System.out.println(articlelist.get(i).getImgurl());
+          }
 
               modelAndView.addObject("type",type);
               modelAndView.addObject("page",pg);
               modelAndView.addObject("articlelist",articlelist);
-              modelAndView.addObject("url", WebAdress.url);
+             // modelAndView.addObject("url", WebAdress.url);
 
           return modelAndView;
     }
@@ -58,6 +64,7 @@ public class NewsController {
            int id=Integer.parseInt(request.getParameter("id"));
            int hitadd=nm.hitadd(id);
            Article article=nm.newsdetail(id);
+         article.setImgurl(article.getImgurl().replaceAll("\\.\\.\\/",WebAdress.url));
            view.addObject("article",article);
            view.addObject("url", WebAdress.url);
 return view;

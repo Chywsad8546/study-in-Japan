@@ -209,7 +209,6 @@
 
             <img src="images/assessment_img.png" width="451" height="387" alt="JAPAN">
 
-            <img src="images/assessment_img.png" width="451" height="387" alt="JAPAN">
 
             <div class="assessment_form">
                 <h2>赴日留学免费评估</h2>
