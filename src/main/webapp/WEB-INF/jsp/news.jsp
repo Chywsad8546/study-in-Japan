@@ -76,9 +76,9 @@
                 <c:forEach var="article" items="${articlelist}">
                 <li>
                     <a class="news_list_item clearfix" href="news/newsdetail.html?id=${article.id}">
-                        <img src="${url}${article.imgurl}" width="200" height="150" alt="">
+                        <img src="${article.imgurl}" width="200" height="150" alt="">
                         <div class="news_item_cont">
-                            <h3>${article.ctitle}</h3>
+                            <h3>${article.title}</h3>
                             <p>${article.description}</p>
                             <div class="num_time">
                                 <span><img src="images/eye_num_icon.png" width="23" height="16" alt="查看数量">${article.hits}</span>

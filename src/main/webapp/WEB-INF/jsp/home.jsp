@@ -63,7 +63,7 @@
 <div class="swiper-container index_banner">
     <div class="swiper-wrapper">
         <c:forEach var="banner" items="${bannerlist}">
-            <div class="swiper-slide"><img src="${url}${banner.imgurl}" width="100%" alt="${banner.title}"></div>
+            <div class="swiper-slide"><img src="${banner.imgurl}" width="100%" alt="${banner.title}"></div>
         </c:forEach>
         <%--<div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
         <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
@@ -389,7 +389,7 @@
                     <a href="news/newsdetail.html?id=${item.id}">
                         <div class="side_news_card">
                             <img src="   ${item.imgurl}" width="320" height="180" alt="">
-                            <h4>${item.ctitle}</h4>
+                            <h4>${item.title}</h4>
                             <p>${item.description}</p>
                             <div class="eye_num_time clearfix">
                                 <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">${item.hits}</span>
