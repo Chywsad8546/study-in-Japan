@@ -10,6 +10,10 @@
       </where>
   </select>
 
+    <select id="schoolimg" resultType="com.study.entity.Schoolimg">
+        SELECT * FROM schoolimg WHERE sid=#{sid}
+    </select>
+
     <select id="schoollist"  resultType="com.study.entity.School">
         SELECT id,uname,jpname,schooladress,schoolnature,buldingschooltime,authentication,peoplecount,popularity,img FROM university
         <where>

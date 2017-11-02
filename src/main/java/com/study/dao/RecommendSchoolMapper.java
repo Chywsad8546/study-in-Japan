@@ -1,9 +1,6 @@
 package com.study.dao;
 
-import com.study.entity.Exchangerate;
-import com.study.entity.Page;
-import com.study.entity.School;
-import com.study.entity.Tuition;
+import com.study.entity.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -19,5 +16,5 @@ public interface RecommendSchoolMapper {
     Tuition tuition(@Param("id")int id);
     double cjrate(@Param("id")int id);
     List<Integer>allschoolid();
-
+   List<Schoolimg>schoolimg(int sid);
 }

@@ -83,7 +83,8 @@
                                 <h3><span>${schools[node].uname}</span>${schools[node].jpname}</h3>
                                 <p><img src="images/address_icon.png" width="12" height="16" alt="地址">${schools[node].schooladress}</p>
                                 <dl class="clearfix">
-                                    <dd>院校性质：<em><c:choose>
+                                    <dd>院校性质：<em>
+                                        <c:choose>
                                         <c:when test="${schools[node].schoolnature== 1}">国立</c:when>
                                         <c:when test="${schools[node].schoolnature== 2}">私立</c:when>
                                         <c:when test="${schools[node].schoolnature== 3}">公立</c:when>
