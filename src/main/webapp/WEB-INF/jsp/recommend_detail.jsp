@@ -11,14 +11,16 @@
     <base href="<%=basePath%>">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
     <title>推荐名校详情</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/recommend_detail.css">
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=D2k29fKitB1l9xIUOh51eVRaGlodRlux"></script>
+    <link rel="stylesheet" href="css/recommend_detail.css?v=2017">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SBIwpaql7GBmOZgUCwiKavvF6kFdREW9"></script>
 </head>
 <body>
     <div class="header header_state clearfix">
@@ -58,7 +60,7 @@
             </ul>
         </div>
         <div class="header_tel">
-            <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
+            <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>400-0888-069</span>
         </div>
     </div>
 
@@ -169,9 +171,10 @@
         </div>
         <div class="detail_item">
             <h3><i class="recommend_detail_icon map"></i>地图</h3>
-            <div class="map_box">
+            <div class="map"  style="border: #007aff solid;height: 350px;width: 700px">
             </div>
         </div>
+
 
     </div>
 
@@ -224,7 +227,7 @@
         <div class="footer_cont clearfix">
             <div class="footer_main">
                 <h4>明德笃实，筑梦名校</h4>
-                <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
+                <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">400-0888-069</div>
                 <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
                 <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
             </div>
@@ -288,3 +291,16 @@
     </script>
 </body>
 </html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>

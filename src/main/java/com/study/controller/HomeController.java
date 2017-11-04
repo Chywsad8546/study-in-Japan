@@ -8,9 +8,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,8 +31,10 @@ public class HomeController {
     @RequestMapping(value = "/")
     public ModelAndView homePage() {
         ModelAndView view = new ModelAndView("home");
-
-        List<Article>newslist=hm.newslist(new ImformationFinal());
+       //ModelAndView view = new ModelAndView("mode");
+        List<Article>newslist=hm.newslist();
+        List<FriendlyLink>meiti=hm.meiti();
+        List<FriendlyLink>jigou=hm.jigou();
 
 
         Img img=new Img();
@@ -48,11 +52,32 @@ public class HomeController {
 
         view.addObject("bannerlist",bannerList);
         view.addObject("newslist",newslist);
-       // view.addObject("url",WebAdress.url);
-
+        view.addObject("url",WebAdress.url);
+        view.addObject("meiti",meiti);
+        view.addObject("jigou",jigou);
         logger.trace("Welcome to Study-In-Japan!");
         return view;
     }
+
+
+    //提交评估
+    @RequestMapping(value = "/assess")
+    public ModelAndView assess(HttpServletRequest request) {
+        ModelAndView view=new ModelAndView("redirect:/");
+
+           String name=request.getParameter("name");
+           String phone=request.getParameter("tel");
+           String ass=request.getParameter("ass");
+           Assess assess=new Assess();
+           assess.setAname(name);
+           assess.setChuli(1);
+           assess.setPhone(phone);
+           assess.setContent(ass);
+           hm.addassess(assess);
+
+       return view;
+    }
+
 
     /**
      * 精品课程

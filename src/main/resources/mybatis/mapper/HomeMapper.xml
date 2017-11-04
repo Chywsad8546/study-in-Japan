@@ -11,12 +11,22 @@
             <if test="img.class2!=0">
                 AND class2=#{img.class2}
             </if>
-            AND access=1
+            AND access=1 AND del=0
         </where>
          ORDER BY recommend DESC , top DESC , updatetime DESC
     </select>
 
     <select id="newslist" resultType="com.study.entity.Article">
-        SELECT * FROM cms_article WHERE  id IN(#{im.id1},#{im.id2},#{im.id3});
+      SELECT * FROM cms_article WHERE del=0 AND display=1  ORDER BY recommend DESC , top DESC ,updatetime DESC, cms_article.addtime DESC LIMIT 0,3
     </select>
+    <select id="meiti" resultType="com.study.entity.FriendlyLink">
+         SELECT * FROM cms_friendlyLink WHERE mediaOrInstitutions=1
+    </select>
+    <select id="jigou" resultType="com.study.entity.FriendlyLink">
+        SELECT * FROM cms_friendlyLink WHERE mediaOrInstitutions=2
+    </select>
+
+    <insert id="addassess">
+      INSERT into assess(chuli,aname,phone,content)VALUES(#{assess.chuli},#{assess.aname},#{assess.phone},#{assess.content});
+    </insert>
 </mapper>

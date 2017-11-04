@@ -1,8 +1,6 @@
 package com.study.dao;
 
-import com.study.entity.Article;
-import com.study.entity.ImformationFinal;
-import com.study.entity.Img;
+import com.study.entity.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -12,5 +10,8 @@ import java.util.List;
  */
 public interface HomeMapper {
     List<Img> imglist(@Param("img")Img img);
-    List<Article> newslist(@Param("im")ImformationFinal im);
+    List<Article> newslist();
+    List<FriendlyLink>meiti();
+    List<FriendlyLink>jigou();
+    int addassess(@Param("assess")Assess assess);
 }

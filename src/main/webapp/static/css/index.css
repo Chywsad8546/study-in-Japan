@@ -180,9 +180,12 @@
     margin-top: 227px;
     padding-left: 102px;
     background: url(../images/flow_pic@2x.png) no-repeat;
+    background-size: 1198px auto;
 }
 @media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     .flow_main {
+        margin-top: 227px;
+        padding-left: 102px;
         background: url(../images/flow_pic@2x.png) no-repeat;
         -webkit-background-size: 1198px auto;
         background-size: 1198px auto;
