@@ -32,10 +32,6 @@ public class RecommendController {
                                   @RequestParam(value = "type", defaultValue = "0", required = false) int type) {
         ModelAndView view = new ModelAndView("recommend");
 
-
-
-
-
         Page pg=new Page();
         pg.setPageNow(pagenow);
         pg.setStartNum((pagenow-1)*pg.getAvgPageCount());
@@ -69,7 +65,7 @@ public class RecommendController {
         //System.out.println(id);
         School school=rc.schoolinfo(id);
         Tuition tuition=rc.tuition(id);
-
+        List<Schoolimg>schoolimgs=rc.schoolimg(id);
         Integer rid=Integer.valueOf(id);
         List<Integer>allschoolid=rc.allschoolid();
         allschoolid.remove(rid);
@@ -106,6 +102,7 @@ public class RecommendController {
         view.addObject("rate",rate);
         view.addObject("schoolre",schoolre);
         view.addObject("url",WebAdress.url);
+        view.addObject("schoolsimg",schoolimgs);
         return view;
     }
 

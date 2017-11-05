@@ -16,9 +16,11 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css?v=2017">
 </head>
 <body>
+
+
 <div class="header clearfix">
     <div class="header_main clearfix">
         <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
@@ -56,7 +58,7 @@
         </ul>
     </div>
     <div class="header_tel">
-        <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
+        <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>400-0888-069</span>
     </div>
 </div>
 
@@ -387,9 +389,9 @@
             <c:forEach var="item" items="${newslist}">
                 <li>
                     <a href="news/newsdetail.html?id=${item.id}">
-                        <div class="side_news_card">
+                        <div class="side_news_card ">
                             <img src="   ${item.imgurl}" width="320" height="180" alt="">
-                            <h4>${item.title}</h4>
+                            <h4 style=" color:#66647D;">${item.title}</h4>
                             <p>${item.description}</p>
                             <div class="eye_num_time clearfix">
                                 <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">${item.hits}</span>
@@ -435,28 +437,28 @@
     <h2>Q&A</h2>
     <ul class="mb60">
         <li>
-            <a href="#">
+
                 <div class="answer_card">
                     <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
-            </a>
+
         </li>
         <li>
-            <a href="#">
+
                 <div class="answer_card">
                     <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
-            </a>
+
         </li>
         <li>
-            <a href="#">
+
                 <div class="answer_card">
                     <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
-            </a>
+
         </li>
     </ul>
     <a class="more_link" href="#">更多解答</a>
@@ -467,20 +469,33 @@
         <img src="images/assessment_img.png" width="451" height="387" alt="JAPAN">
         <div class="assessment_form">
             <h2>赴日留学免费评估</h2>
-            <form action="">
+            <form onsubmit="tijiao()" method="post" action="/assess">
                 <div class="form_box">
                     <div class="message_group clearfix">
-                        <input class="name" type="text" placeholder="姓名">
-                        <input class="tel" type="tel" placeholder="电话号码" maxlength="11">
+                        <input class="name" name="name" required="required" maxlength="20" type="text" placeholder="姓名">
+                        <input class="tel" name="tel" required="required" type="tel" placeholder="电话号码" maxlength="11">
                     </div>
-                    <textarea name="" id="" placeholder="留言"></textarea>
-                    <p>还可以输入<em>90</em>字</p>
+                    <textarea required="required" oninput="gbcoun(this)" name="ass" id="pvalue" placeholder="留言" maxlength="100"></textarea>
+                    <p>还可以输入<em id="ping">100</em>字</p>
                 </div>
                 <div class="submit_group">
                     <input type="submit" value="提交评估">
                     <p>专业顾问将尽快与您联系</p>
                 </div>
             </form>
+            <script language="javascript" >
+                 function gbcoun(item) {
+                     var pval=item.value.length;
+                     var sheng=100-pval;
+                     document.getElementById("ping").innerHTML=sheng;
+                 }
+                 
+                 function tijiao() {
+                     alert("评估成功，留意电话")
+                     return true;
+                 }
+                 
+            </script>
         </div>
     </div>
 </div>
@@ -489,29 +504,27 @@
     <div class="media">
         <h2>合作媒体  協力メディア</h2>
         <ul>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
+            <c:forEach items="${meiti}" var="item">
+
+                    <a style="display: inline-block;color: #001200" href="${item.webAddress}">   <li>
+                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="100">
+                    </li>
+                    </a>
+            </c:forEach>
+
         </ul>
     </div>
     <div class="institution">
         <h2>合作机构  協力組織</h2>
         <ul>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
-            <li><img src="" alt="" width="200" height="100"></li>
+            <c:forEach items="${jigou}" var="item">
+                <a style="display: inline-block;color: #001200" href="${item.webAddress}">
+                <li>
+                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="100">
+
+                </li>
+                </a>
+            </c:forEach>
         </ul>
     </div>
 </div>
@@ -520,9 +533,9 @@
     <div class="footer_cont clearfix">
         <div class="footer_main">
             <h4>明德笃实，筑梦名校</h4>
-            <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
-            <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
-            <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
+            <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">400-0888-069</div>
+            <p class="email_add"><span>Email: service@ycjxschool.com</span><span>Add: 北京市朝阳区百子湾路29号楼3层A02室</span></p>
+            <p>©  2017 北京中天艺圣文化传媒有限公司 保留一切权利</p>
         </div>
         <ul class="QR_code">
             <li>

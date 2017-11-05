@@ -15,7 +15,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/news_recommend.css">
+    <link rel="stylesheet" href="css/news_recommend.css?v=2017">
 </head>
 <body>
 <div class="header clearfix">
@@ -55,7 +55,7 @@
         </ul>
     </div>
     <div class="header_tel">
-        <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>4008-517-517</span>
+        <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>400-0888-069</span>
     </div>
 </div>
 <div class="news_banner" id="fixed_bottom_header">
@@ -83,7 +83,8 @@
                                 <h3><span>${schools[node].uname}</span>${schools[node].jpname}</h3>
                                 <p><img src="images/address_icon.png" width="12" height="16" alt="地址">${schools[node].schooladress}</p>
                                 <dl class="clearfix">
-                                    <dd>院校性质：<em><c:choose>
+                                    <dd>院校性质：<em>
+                                        <c:choose>
                                         <c:when test="${schools[node].schoolnature== 1}">国立</c:when>
                                         <c:when test="${schools[node].schoolnature== 2}">私立</c:when>
                                         <c:when test="${schools[node].schoolnature== 3}">公立</c:when>
@@ -619,7 +620,7 @@
     <div class="footer_cont clearfix">
         <div class="footer_main">
             <h4>明德笃实，筑梦名校</h4>
-            <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">4008-517-517</div>
+            <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">400-0888-069</div>
             <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
             <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
         </div>
