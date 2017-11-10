@@ -171,7 +171,7 @@
         </div>
         <div class="detail_item">
             <h3><i class="recommend_detail_icon map"></i>地图</h3>
-            <div class="map"  style="border: #007aff solid;height: 350px;width: 700px">
+            <div id="schoolmap" class="map"  style="height: 350px;width: 700px">
             </div>
         </div>
 
@@ -205,20 +205,33 @@
 
             <div class="assessment_form">
                 <h2>赴日留学免费评估</h2>
-                <form action="">
+                <form onsubmit="tijiao()" method="post" action="assess.html">
                     <div class="form_box">
                         <div class="message_group clearfix">
-                            <input class="name" type="text" placeholder="姓名">
-                            <input class="tel" type="tel" placeholder="电话号码" maxlength="11">
+                            <input class="name" name="name" required="required" maxlength="20" type="text" placeholder="姓名">
+                            <input class="tel" name="tel" required="required" type="tel" placeholder="电话号码" maxlength="11">
                         </div>
-                        <textarea name="" id="" placeholder="留言"></textarea>
-                        <p>还可以输入<em>90</em>字</p>
+                        <textarea required="required" oninput="gbcoun(this)" name="ass" id="pvalue" placeholder="留言" maxlength="100"></textarea>
+                        <p>还可以输入<em id="ping">100</em>字</p>
                     </div>
                     <div class="submit_group">
                         <input type="submit" value="提交评估">
                         <p>专业顾问将尽快与您联系</p>
                     </div>
                 </form>
+                <script language="javascript" >
+                    function gbcoun(item) {
+                        var pval=item.value.length;
+                        var sheng=100-pval;
+                        document.getElementById("ping").innerHTML=sheng;
+                    }
+
+                    function tijiao() {
+                        alert("评估成功，留意电话")
+                        return true;
+                    }
+
+                </script>
             </div>
         </div>
     </div>
@@ -228,8 +241,8 @@
             <div class="footer_main">
                 <h4>明德笃实，筑梦名校</h4>
                 <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">400-0888-069</div>
-                <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
-                <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
+                <p class="email_add"><span>Email: service@ycjxschool.com</span><span>Add: 北京市朝阳区百子湾路29号楼3层A02室</span></p>
+                <p>©  2017 北京中天艺圣文化传媒有限公司 保留一切权利</p>
             </div>
             <ul class="QR_code">
                 <li>
@@ -293,7 +306,7 @@
 </html>
 <script type="text/javascript">
     // 百度地图API功能
-    var map = new BMap.Map("map");    // 创建Map实例
+    var map = new BMap.Map("schoolmap");    // 创建Map实例
     map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
     //添加地图类型控件
     map.addControl(new BMap.MapTypeControl({

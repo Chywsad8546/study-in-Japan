@@ -61,13 +61,13 @@ public class HomeController {
 
 
     //提交评估
-    @RequestMapping(value = "/assess")
-    public ModelAndView assess(HttpServletRequest request) {
+    @RequestMapping(value = "/assess.html")
+    public ModelAndView assess(HttpServletRequest request,
+                               @RequestParam(value = "ass", defaultValue = "", required = false)String ass) {
         ModelAndView view=new ModelAndView("redirect:/");
 
            String name=request.getParameter("name");
            String phone=request.getParameter("tel");
-           String ass=request.getParameter("ass");
            Assess assess=new Assess();
            assess.setAname(name);
            assess.setChuli(1);

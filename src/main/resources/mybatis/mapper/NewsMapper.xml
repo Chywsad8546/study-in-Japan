@@ -16,6 +16,12 @@
         ORDER BY recommend DESC , top DESC , updatetime DESC LIMIT #{page.startNum},#{page.avgPageCount}
     </select>
 
+    <select id="renews" resultType="com.study.entity.Article">
+        SELECT * FROM cms_article
+        WHERE class2=43
+        ORDER BY recommend DESC , top DESC , updatetime DESC LIMIT 0,3
+    </select>
+
     <select id="newscount" resultType="int">
         SELECT COUNT(id) FROM cms_article
         <where>

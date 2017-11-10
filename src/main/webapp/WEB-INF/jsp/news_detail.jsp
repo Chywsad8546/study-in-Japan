@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
@@ -85,33 +86,19 @@
     <div class="side_assess_box side_news_box">
         <div class="news_detail_side">
             <h2>英才精彩推荐</h2>
+            <c:forEach items="${renews}" var="article">
+                <a href="news/newsdetail.html?id=${article.id}">
             <div class="side_news_card">
-                <img src="images/recommend_list_pic.jpg" width="320" height="180" alt="">
-                <h4>日本经营学专业优势介绍</h4>
-                <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
+                    <img src="${article.imgurl}" width="320" height="180" alt="">
+                <h4>${article.title}</h4>
+                <p>${article.description}</p>
                 <div class="eye_num_time clearfix">
-                    <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
-                    <span class="jfr">2017-10-01 10:33</span>
+                    <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">${article.hits}</span>
+                    <span class="jfr">${article.updatetime}</span>
                 </div>
             </div>
-            <div class="side_news_card">
-                <img src="images/recommend_list_pic.jpg" width="320" height="180" alt="">
-                <h4>日本经营学专业优势介绍</h4>
-                <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
-                <div class="eye_num_time clearfix">
-                    <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
-                    <span class="jfr">2017-10-01 10:33</span>
-                </div>
-            </div>
-            <div class="side_news_card">
-                <img src="images/recommend_list_pic.jpg" width="320" height="180" alt="">
-                <h4>日本经营学专业优势介绍</h4>
-                <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
-                <div class="eye_num_time clearfix">
-                    <span class="jfl"><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">1024</span>
-                    <span class="jfr">2017-10-01 10:33</span>
-                </div>
-            </div>
+                </a>
+            </c:forEach>
         </div>
     </div>
 </div>
@@ -121,20 +108,33 @@
         <img src="images/assessment_img.png" width="451" height="387" alt="JAPAN">
         <div class="assessment_form">
             <h2>赴日留学免费评估</h2>
-            <form action="">
+            <form onsubmit="tijiao()" method="post" action="assess.html">
                 <div class="form_box">
                     <div class="message_group clearfix">
-                        <input class="name" type="text" placeholder="姓名">
-                        <input class="tel" type="tel" placeholder="电话号码" maxlength="11">
+                        <input class="name" name="name" required="required" maxlength="20" type="text" placeholder="姓名">
+                        <input class="tel" name="tel" required="required" type="tel" placeholder="电话号码" maxlength="11">
                     </div>
-                    <textarea name="" id="" placeholder="留言"></textarea>
-                    <p>还可以输入<em>90</em>字</p>
+                    <textarea required="required" oninput="gbcoun(this)" name="ass" id="pvalue" placeholder="留言" maxlength="100"></textarea>
+                    <p>还可以输入<em id="ping">100</em>字</p>
                 </div>
                 <div class="submit_group">
                     <input type="submit" value="提交评估">
                     <p>专业顾问将尽快与您联系</p>
                 </div>
             </form>
+            <script language="javascript" >
+                function gbcoun(item) {
+                    var pval=item.value.length;
+                    var sheng=100-pval;
+                    document.getElementById("ping").innerHTML=sheng;
+                }
+
+                function tijiao() {
+                    alert("评估成功，留意电话")
+                    return true;
+                }
+
+            </script>
         </div>
     </div>
 </div>
@@ -144,8 +144,8 @@
         <div class="footer_main">
             <h4>明德笃实，筑梦名校</h4>
             <div class="tel"><img src="images/white_tel.png" width="22" height="24" alt="电话">400-0888-069</div>
-            <p class="email_add"><span>Email: support@yingcai.com</span><span>Add: 北京市朝阳区西大望路XX大厦3层</span></p>
-            <p>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</p>
+            <p class="email_add"><span>Email: service@ycjxschool.com</span><span>Add: 北京市朝阳区百子湾路29号楼3层A02室</span></p>
+            <p>©  2017 北京中天艺圣文化传媒有限公司 保留一切权利</p>
         </div>
         <ul class="QR_code">
             <li>
