@@ -15,4 +15,5 @@ public interface NewsMapper {
     int newscount(@Param("article")Article article);
     Article newsdetail(@Param("id") int id);
     int hitadd(@Param("id")int id);
+    List<Article> renews();
 }

@@ -76,9 +76,9 @@
 
     <div class="banner_form">
         <p>免费获取专业评估，专业顾问极速响应</p>
-        <form action="" class="form_group clearfix">
-            <input class="normal name" type="text" placeholder="姓名">
-            <input class="normal tel" type="tel" placeholder="电话号码" maxlength="11">
+        <form onsubmit="tijiao()" action="assess.html" class="form_group clearfix">
+            <input required="required" class="normal name" type="text" placeholder="姓名">
+            <input required="required" class="normal tel" type="tel" placeholder="电话号码" maxlength="11">
             <input class="button submit" type="submit" value="立即评估">
             <input class="button inline" type="button" value="在线咨询">
         </form>
@@ -390,7 +390,7 @@
                 <li>
                     <a href="news/newsdetail.html?id=${item.id}">
                         <div class="side_news_card ">
-                            <img src="   ${item.imgurl}" width="320" height="180" alt="">
+                            <img src="${url}${item.imgurl}" width="320" height="180" alt="">
                             <h4 style=" color:#66647D;">${item.title}</h4>
                             <p>${item.description}</p>
                             <div class="eye_num_time clearfix">
@@ -469,7 +469,7 @@
         <img src="images/assessment_img.png" width="451" height="387" alt="JAPAN">
         <div class="assessment_form">
             <h2>赴日留学免费评估</h2>
-            <form onsubmit="tijiao()" method="post" action="/assess">
+            <form onsubmit="tijiao()" method="post" action="assess.html">
                 <div class="form_box">
                     <div class="message_group clearfix">
                         <input class="name" name="name" required="required" maxlength="20" type="text" placeholder="姓名">
@@ -506,7 +506,7 @@
         <ul>
             <c:forEach items="${meiti}" var="item">
 
-                    <a style="display: inline-block;color: #001200" href="${item.webAddress}">   <li>
+                    <a rel="nofollow" style="display: inline-block;color: #001200" href="${item.webAddress}">   <li>
                         <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="100">
                     </li>
                     </a>
@@ -518,7 +518,7 @@
         <h2>合作机构  協力組織</h2>
         <ul>
             <c:forEach items="${jigou}" var="item">
-                <a style="display: inline-block;color: #001200" href="${item.webAddress}">
+                <a rel="nofollow" style="display: inline-block;color: #001200" href="${item.webAddress}">
                 <li>
                     <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="100">
 

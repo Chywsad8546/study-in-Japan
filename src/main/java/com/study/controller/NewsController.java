@@ -65,8 +65,17 @@ public class NewsController {
            int hitadd=nm.hitadd(id);
            Article article=nm.newsdetail(id);
          article.setImgurl(article.getImgurl().replaceAll("\\.\\.\\/",WebAdress.url));
+
+         List<Article>renews=nm.renews();
+        for (int i=0;i<renews.size();i++){
+            Article it= renews.get(i);
+            it.setImgurl(it.getImgurl().replaceAll("\\.\\.\\/",WebAdress.url));
+            renews.set(i,it);
+            //  System.out.println(articlelist.get(i).getImgurl());
+        }
            view.addObject("article",article);
            view.addObject("url", WebAdress.url);
+           view.addObject("renews",renews);
 return view;
     }
 
