@@ -1663,6 +1663,18 @@
                         </li>
                         <li>
                             <i class="course_list_icon loop"></i>
+                            <p>N1能力考对策课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon loop"></i>
+                            <p>N2能力考对策课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon loop"></i>
+                            <p>N3能力考对策课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon loop"></i>
                             <p>N5-N4能力考基础课程</p>
                         </li>
                         <li>
@@ -1710,6 +1722,18 @@
                         <li>
                             <i class="course_list_icon loop"></i>
                             <p>N2能力考考前冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon loop"></i>
+                            <p>N1能力考对策课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon loop"></i>
+                            <p>N2能力考对策课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon loop"></i>
+                            <p>N3能力考对策课程</p>
                         </li>
                         <li>
                             <i class="course_list_icon loop"></i>
