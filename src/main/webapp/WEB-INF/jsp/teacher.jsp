@@ -61,30 +61,15 @@
     <div class="teacher_banner_shadow"></div>
 </div>
 
-<div id="subject" class="content">
+<div id="subject"  class="content">
     <h2>英才进学塾 御用教师团队</h2>
-    <ul>
-        <li>
+    <ul style="margin-left: 10%">
+        <li class="big">
             <img src="images/2.jpg">
             <i class="mask"></i>
             <div>
                 <h4>
                     <span>洪一鸣</span>
-                    <em>早稻田大学文化构想学部</em>
-                </h4>
-                <div>
-                    <p>钻研一般入试（日本大学自主招生）、center入试（日本高考）、日本留考</p>
-                    <p>多年亲身参加留考、一般入试、center入试</p>
-                    <p>主要负责文综+日语+大学校内考及面试</p>
-                </div>
-            </div>
-        </li>
-        <li class="big">
-            <img src="images/1.jpg">
-            <i class="mask"></i>
-            <div>
-                <h4>
-                    <span>邓超</span>
                     <em>早稻田大学文化构想学部</em>
                 </h4>
                 <div>
@@ -242,13 +227,13 @@
         <span>在线咨询</span>
     </div>
     <div class="consult_form">
-        <form action="">
-            <input type="text" placeholder="姓名">
-            <input class="mb25" type="tel" placeholder="电话号码" maxlength="11">
-            <button class="assess_btn">立即评估</button>
-            <button class="online_btn">在线咨询</button>
-        </form>
-    </div>
+    <form onsubmit="tijiao()" method="post" action="assess.html">
+        <input name="name"  type="text" required="required" placeholder="姓名">
+        <input class="mb25" name="tel" required="required" type="tel" placeholder="电话号码" maxlength="11">
+        <button type="submit" class="assess_btn">立即评估</button>
+        <button class="online_btn">在线咨询</button>
+    </form>
+</div>
 </div>
 <a class="fixed_ad" href="#"><img src="images/fixed_ad.png" width="90" height="60" alt="2018夏季入学优惠"></a>
 <script src="js/jquery-1.9.1.min.js"></script>

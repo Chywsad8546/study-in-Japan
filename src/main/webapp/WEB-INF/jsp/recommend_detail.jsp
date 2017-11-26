@@ -265,10 +265,10 @@
             <span>在线咨询</span>
         </div>
         <div class="consult_form">
-            <form action="">
-                <input type="text" placeholder="姓名">
-                <input class="mb25" type="tel" placeholder="电话号码" maxlength="11">
-                <button class="assess_btn">立即评估</button>
+            <form onsubmit="tijiao()" method="post" action="assess.html">
+                <input name="name"  type="text" required="required" placeholder="姓名">
+                <input class="mb25" name="tel" required="required" type="tel" placeholder="电话号码" maxlength="11">
+                <button type="submit" class="assess_btn">立即评估</button>
                 <button class="online_btn">在线咨询</button>
             </form>
         </div>

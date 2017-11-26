@@ -15,7 +15,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/global.css?v2017">
     <link rel="stylesheet" href="css/index.css?v=2017">
 </head>
 <body>
@@ -65,7 +65,7 @@
 <div class="swiper-container index_banner">
     <div class="swiper-wrapper">
         <c:forEach var="banner" items="${bannerlist}">
-            <div class="swiper-slide"><img src="${banner.imgurl}" width="100%" alt="${banner.title}"></div>
+            <div class="swiper-slide"><a target="_blank" href="${banner.links}"><img src="${banner.imgurl}" width="100%" alt="${banner.title}"></a></div>
         </c:forEach>
         <%--<div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
         <div class="swiper-slide"><img src="/images/index_banner_pic1.jpg" width="100%" alt="明德"></div>
