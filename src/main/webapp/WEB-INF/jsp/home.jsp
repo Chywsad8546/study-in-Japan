@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <base href="<%=basePath%>">
+    <base href="/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
@@ -26,7 +26,7 @@
         <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li class="current">
-                <a href="" target="_blank">
+                <a href="">
                     首页
                     <p>ホームページ</p>
                 </a>

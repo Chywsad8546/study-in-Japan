@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <base href="<%=basePath%>">
+    <base href="/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
