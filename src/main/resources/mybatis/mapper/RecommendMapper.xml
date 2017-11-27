@@ -15,7 +15,7 @@
     </select>
 
     <select id="schoollist"  resultType="com.study.entity.School">
-        SELECT id,uname,jpname,schooladress,schoolnature,buldingschooltime,authentication,peoplecount,popularity,img FROM university
+        SELECT * FROM university
         <where>
             <if test="school.schoolnature!=0">
                 AND schoolnature =#{school.schoolnature}
@@ -24,7 +24,7 @@
                 AND authentication =#{school.authentication}
             </if>
         </where>
-        ORDER BY popularity ASC LIMIT #{page.startNum},#{page.avgPageCount}
+        ORDER BY popularity DESC LIMIT #{page.startNum},#{page.avgPageCount}
     </select>
 
     <select id="schoolinfo" resultType="com.study.entity.School">

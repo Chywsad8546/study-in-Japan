@@ -91,7 +91,7 @@
         <h2>英才进学塾优势  我々の強み</h2>
         <ul class="advantage_box">
             <li>
-                <a href="news_detail.html">
+                <a href="#">
                     <div class="advantage_card">
                         <img src="images/advantage_pic1.png" width="212" height="212" alt="亲临日本">
                         <h4>亲临日本</h4>
@@ -101,7 +101,7 @@
                 </a>
             </li>
             <li>
-                <a href="news_detail.html">
+                <a href="teacher.html">
                     <div class="advantage_card">
                         <img src="images/advantage_pic2.png" width="212" height="212" alt="师资优秀">
                         <h4>师资优秀</h4>
@@ -111,7 +111,7 @@
                 </a>
             </li>
             <li>
-                <a href="news_detail.html">
+                <a href="course.html">
                     <div class="advantage_card">
                         <img src="images/advantage_pic3.png" width="212" height="212" alt="精品小班">
                         <h4>精品小班</h4>
@@ -121,7 +121,7 @@
                 </a>
             </li>
             <li>
-                <a href="news_detail.html">
+                <a href="rc/recommend.html">
                     <div class="advantage_card">
                         <img src="images/advantage_pic4.png" width="212" height="212" alt="搭配灵活">
                         <h4>搭配灵活</h4>
@@ -507,7 +507,7 @@
             <c:forEach items="${meiti}" var="item">
 
                     <a rel="nofollow" style="display: inline-block;color: #001200" href="${item.webAddress}">   <li>
-                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="100">
+                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="140" height="85">
                     </li>
                     </a>
             </c:forEach>
@@ -520,7 +520,7 @@
             <c:forEach items="${jigou}" var="item">
                 <a rel="nofollow" style="display: inline-block;color: #001200" href="${item.webAddress}">
                 <li>
-                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="100">
+                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="140" height="85">
 
                 </li>
                 </a>

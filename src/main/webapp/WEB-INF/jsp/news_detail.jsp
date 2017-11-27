@@ -70,7 +70,7 @@
                 <span class="ml20">${article.updatetime}</span>
             </div>
             <div class="detail_cont_main">
-                <img src="${article.imgurl}" width="720" height="400" alt="">
+                <img src="${article.imgurl}"  alt="">
                 ${article.content}
             </div>
             <div class="share">
