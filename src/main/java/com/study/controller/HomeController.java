@@ -64,7 +64,7 @@ public class HomeController {
     @RequestMapping(value = "/assess.html")
     public ModelAndView assess(HttpServletRequest request,
                                @RequestParam(value = "ass", defaultValue = "", required = false)String ass) {
-        ModelAndView view=new ModelAndView("redirect:/");
+        ModelAndView view=new ModelAndView("forward:/");
 
            String name=request.getParameter("name");
            String phone=request.getParameter("tel");
