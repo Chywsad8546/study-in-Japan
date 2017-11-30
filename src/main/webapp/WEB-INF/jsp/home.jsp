@@ -506,8 +506,8 @@
         <ul>
             <c:forEach items="${meiti}" var="item">
 
-                    <a rel="nofollow" style="display: inline-block;color: #001200" href="${item.webAddress}">   <li>
-                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="140" height="85">
+                    <a rel="nofollow" style="margin-right: 50px;display: inline-block;color: #001200" href="${item.webAddress}">   <li>
+                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="180" height="70">
                     </li>
                     </a>
             </c:forEach>
@@ -518,9 +518,9 @@
         <h2>合作机构  協力組織</h2>
         <ul>
             <c:forEach items="${jigou}" var="item">
-                <a rel="nofollow" style="display: inline-block;color: #001200" href="${item.webAddress}">
+                <a rel="nofollow" style="margin-right: 50px;display: inline-block;color: #001200" href="${item.webAddress}">
                 <li>
-                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="140" height="85">
+                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="180" height="70">
 
                 </li>
                 </a>

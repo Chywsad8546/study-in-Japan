@@ -381,7 +381,8 @@
             </p>
         </div>
     </div>
-    <div class="tabs_cont none">
+
+    <div class="tabs_cont nkone">
         <div class="course_item_cont">
             <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>上半年全科套餐01</span></h3>
             <div class="cont_detail clearfix">
@@ -1031,6 +1032,7 @@
             </p>
         </div>
     </div>
+
     <div class="tabs_cont none">
         <div class="course_item_cont">
             <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>2年名门大学套餐01</span></h3>
@@ -1595,6 +1597,7 @@
             </p>
         </div>
     </div>
+
     <div class="tabs_cont none">
         <div class="course_item_cont">
             <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>英语套餐01</span></h3>
