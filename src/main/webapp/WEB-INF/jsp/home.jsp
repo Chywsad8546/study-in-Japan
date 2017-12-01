@@ -15,12 +15,10 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="css/global.css?v2017">
+    <link rel="stylesheet" href="css/global.css?v2016">
     <link rel="stylesheet" href="css/index.css?v=2017">
 </head>
 <body>
-
-
 <div class="header clearfix">
     <div class="header_main clearfix">
         <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
@@ -445,20 +443,16 @@
 
         </li>
         <li>
-
                 <div class="answer_card">
                     <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
-
         </li>
         <li>
-
                 <div class="answer_card">
                     <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
-
         </li>
     </ul>
     <a class="more_link" href="#">更多解答</a>
@@ -494,7 +488,6 @@
                      alert("评估成功，留意电话")
                      return true;
                  }
-                 
             </script>
         </div>
     </div>
@@ -505,11 +498,11 @@
         <h2>合作媒体  協力メディア</h2>
         <ul>
             <c:forEach items="${meiti}" var="item">
-
-                    <a rel="nofollow" style="margin-right: 50px;display: inline-block;color: #001200" href="${item.webAddress}">   <li>
-                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="180" height="70">
+                    <li>
+                        <a rel="nofollow"  href="${item.webAddress}">
+                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="160" height="80">
+                        </a>
                     </li>
-                    </a>
             </c:forEach>
 
         </ul>
@@ -518,12 +511,11 @@
         <h2>合作机构  協力組織</h2>
         <ul>
             <c:forEach items="${jigou}" var="item">
-                <a rel="nofollow" style="margin-right: 50px;display: inline-block;color: #001200" href="${item.webAddress}">
                 <li>
-                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="180" height="70">
-
+                    <a rel="nofollow" href="${item.webAddress}">
+                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="160" height="80">
+                    </a>
                 </li>
-                </a>
             </c:forEach>
         </ul>
     </div>

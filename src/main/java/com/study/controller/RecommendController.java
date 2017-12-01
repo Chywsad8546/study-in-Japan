@@ -55,7 +55,7 @@ public class RecommendController {
 
 
     /**
-     * 资讯详情
+     * 情
      * @return
      */
     @RequestMapping(value = "/recommend_detail.html")
