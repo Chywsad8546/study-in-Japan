@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="css/course.css?v=2017">
 </head>
 <body>
-<div class="header clearfix">
+<div id="wen" class="header clearfix">
     <div class="header_main clearfix">
         <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li>
-                <a href="">
+                <a onclick="tiaoshou()" href="">
                     首页
                     <p>ホームページ</p>
                 </a>
@@ -57,21 +57,333 @@
         <img src="images/white_tel.png" width="22" height="24" alt="电话"><span>400-0888-069</span>
     </div>
 </div>
+
 <div class="course_banner" id="fixed_bottom_header">
     <div class="tab_banner_shadow"></div>
     <div class="tabs_item">
         <ul>
-            <li class="current"><a href="javascript:void(0)">理科套餐<span>理科コース</span></a></li>
+            <li id="wenmao" class="current"><a href="javascript:void(0)">文科套餐<span>文科コース</span></a></li>
+            <li><a href="javascript:void(0)">理科套餐<span>理科コース</span></a></li>
             <li><a href="javascript:void(0)">全科套餐<span>全科コース</span><img class="course_hot" src="images/course_hot.png" width="28" height="14" alt="hot"></a></li>
-            <li><a href="javascript:void(0)">进学套餐<span>进学コース</span></a></li>
+            <li id="jingmao"><a href="javascript:void(0)">进学套餐<span>进学コース</span></a></li>
             <li><a href="javascript:void(0)">语言套餐<span>语言コース</span></a></li>
         </ul>
     </div>
 </div>
+
 <div class="tabs_cont_box">
+    <div class="tabs_cont none">
+        <div id="wen" class="course_item_cont">
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>上半年文科套餐</span></h3>
+            <div class="cont_detail clearfix">
+                <div class="course_list" style="width: 26%">
+                    <h4>留学考试课程</h4>
+                    <ul>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考文科综合科目基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考文科数学基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考日本语基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>6月留考综合科目对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>6月留考数学对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>6月留考日语对策冲刺课程</p>
+                        </li>
+                        <%-- <li>
+                             <i class="course_list_icon loop"></i>
+                             <p>11月留考理科数学对策冲刺课程</p>
+                         </li>
+                         <li>
+                             <i class="course_list_icon loop"></i>
+                             <p>11月留考物理对策冲刺课程</p>
+                         </li>
+                         <li>
+                             <i class="course_list_icon loop"></i>
+                             <p>11月留考日语对策冲刺课程</p>
+                         </li>
+                         <li>
+                             <i class="course_list_icon loop"></i>
+                             <p>留考全科小班辅导课程</p>
+                         </li>--%>
+                    </ul>
+                </div>
+                <div class="list_cont">
+                    <div class="cont_left" style="margin-left: 20px">
+                        <span>课程简介：</span>
+                        <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                        <span>适用学员：</span>
+                        <p>希望留学日本，有一定日语基础的学员。</p>
+                        <span>教学目标：</span>
+                        <p>提高学员日语水平，提高应试考试能力。</p>
+                    </div>
+                    <div class="cont_right">
+                        <p>课次：<em class="font36">90</em>节</p>
+                        <p>上课时间：2017/8/1 至 2018/7/31 <em class="color_red">*</em></p>
+                        <p class="font12"><em class="color_red">*</em> 根据学员具体情况定制</p>
+                        <p>上课地点：日本-东京</p>
+                    </div>
+                    <div class="price_fix">
+                        <span>获取学费价格</span>
+                        <button onclick="xianping()" class="">立即评估</button>
+                    </div>
+                </div>
+            </div>
+            <p class="course_tip">
+                <span><i class="course_list_icon only"></i>每年度只开设一期课程，课程有效期内可参加一次</span>
+                <span><i class="course_list_icon loop"></i>循环滚动开课，课程有效期内课任意参加</span>
+            </p>
+        </div>
+        <div class="course_item_cont">
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>下半年文科套餐</span></h3>
+            <div class="cont_detail clearfix">
+                <div class="course_list" style="width: 26%">
+                    <h4>留学考试课程</h4>
+                    <ul>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考文科综合科目基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考文科数学基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考日本语基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>11月留考综合科目对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>11月留考数学对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>11月留考日语对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>东京大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>京都大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>东京工业大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>早稻田大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>庆应义塾大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>上智大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>GMARCH・关关同立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>其他人气私立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>名门国公立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>地方国公立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>小论文面试等综合指导课程</p>
+                        </li>
+                        <%-- <li>
+                             <i class="course_list_icon loop"></i>
+                             <p>6月留考日语对策冲刺课程</p>
+                         </li>
+                         <li>
+                             <i class="course_list_icon loop"></i>
+                             <p>6月留考数学对策冲刺课程</p>
+                         </li>--%>
+                    </ul>
+                </div>
+                <div class="list_cont">
+                    <div class="cont_left" style="margin-left: 20px;margin-top: 13%">
+                        <span>课程简介：</span>
+                        <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                        <span>适用学员：</span>
+                        <p>希望留学日本，有一定日语基础的学员。</p>
+                        <span>教学目标：</span>
+                        <p>提高学员日语水平，提高应试考试能力。</p>
+                    </div>
+                    <div class="cont_right">
+                        <p>课次：<em class="font36">90</em>节</p>
+                        <p>上课时间：2017/8/1 至 2018/7/31 <em class="color_red">*</em></p>
+                        <p class="font12"><em class="color_red">*</em> 根据学员具体情况定制</p>
+                        <p>上课地点：日本-东京</p>
+                    </div>
+                    <div class="price_fix">
+                        <span>获取学费价格</span>
+                        <button onclick="xianping()" class="">立即评估</button>
+                    </div>
+                </div>
+            </div>
+            <p class="course_tip">
+                <span><i class="course_list_icon only"></i>每年度只开设一期课程，课程有效期内可参加一次</span>
+                <span><i class="course_list_icon loop"></i>循环滚动开课，课程有效期内课任意参加</span>
+            </p>
+        </div>
+        <div class="course_item_cont">
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>全年文科套餐</span></h3>
+            <div class="cont_detail clearfix">
+                <div class="course_list" style="width: 26%">
+                    <h4>留学考试课程</h4>
+                    <ul>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考文科综合科目基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考文科数学基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>留考日本语基础课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>11月留考综合科目对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>11月留考数学对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>11月留考日语对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>6月留考综合科目对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>6月留考数学对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>6月留考日语对策冲刺课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>东京大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>京都大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>一桥大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>早稻田大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>庆应义塾大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>上智大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>GMARCH・关关同立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>其他人气私立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>名门国公立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>地方国公立大学校内考课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>小论文面试等综合指导课程</p>
+                        </li>
+                        <li>
+                            <i class="course_list_icon only"></i>
+                            <p>习题答疑课程</p>
+                        </li>
+                        <%--<li>
+                            <i class="course_list_icon loop"></i>
+                            <p>留考全科小班辅导课程</p>
+                        </li>--%>
+                    </ul>
+                </div>
+                <div class="list_cont">
+                    <div class="cont_left" style="margin-left: 20px;margin-top: 19%">
+                        <span>课程简介：</span>
+                        <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                        <span>适用学员：</span>
+                        <p>希望留学日本，有一定日语基础的学员。</p>
+                        <span>教学目标：</span>
+                        <p>提高学员日语水平，提高应试考试能力。</p>
+                    </div>
+                    <div class="cont_right">
+                        <p>课次：<em class="font36">90</em>节</p>
+                        <p>上课时间：2017/8/1 至 2018/7/31 <em class="color_red">*</em></p>
+                        <p class="font12"><em class="color_red">*</em> 根据学员具体情况定制</p>
+                        <p>上课地点：日本-东京</p>
+                    </div>
+                    <div class="price_fix">
+                        <span>获取学费价格</span>
+                        <button onclick="xianping()" class="">立即评估</button>
+                    </div>
+                </div>
+            </div>
+            <p class="course_tip">
+                <span><i class="course_list_icon only"></i>每年度只开设一期课程，课程有效期内可参加一次</span>
+                <span><i class="course_list_icon loop"></i>循环滚动开课，课程有效期内课任意参加</span>
+            </p>
+        </div>
+    </div>
+
     <div class="tabs_cont">
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>上半年理科套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>上半年理科套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -145,7 +457,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>下半年理科套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>下半年理科套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -259,7 +571,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>全年理科套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>全年理科套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -384,7 +696,7 @@
 
     <div class="tabs_cont nkone">
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>上半年全科套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>上半年全科套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -506,7 +818,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>下半年全科套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>下半年全科套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -672,7 +984,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>全年全科套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>全年全科套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -850,7 +1162,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>全年全科强化套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>全年全科强化套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -1034,8 +1346,8 @@
     </div>
 
     <div class="tabs_cont none">
-        <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>2年名门大学套餐01</span></h3>
+        <div  class="course_item_cont">
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>2年名门大学套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -1221,7 +1533,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>2年安心进学套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>2年安心进学套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -1402,8 +1714,8 @@
                 <span><i class="course_list_icon loop"></i>循环滚动开课，课程有效期内课任意参加</span>
             </p>
         </div>
-        <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>2年精品进学套餐01</span></h3>
+        <div class="course_item_cont" id="jingpinmao">
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>2年精品进学套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list" style="width: 26%">
                     <h4>留学考试课程</h4>
@@ -1600,7 +1912,7 @@
 
     <div class="tabs_cont none">
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>英语套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>英语套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list">
                     <h4>留学考试课程</h4>
@@ -1651,7 +1963,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>日语套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>日语套餐</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list">
                     <h4>留学考试课程</h4>
@@ -1713,7 +2025,7 @@
             </p>
         </div>
         <div class="course_item_cont">
-            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>语言类强化套餐01</span></h3>
+            <h3><img src="images/course_book_icon.png" width="44" height="46" alt="套餐"><span>语言类强化套</span></h3>
             <div class="cont_detail clearfix">
                 <div class="course_list">
                     <h4>留学考试课程</h4>
@@ -1859,7 +2171,7 @@
     <div class="consult_show">
         <img src="images/free_assess.png" width="23" height="24" alt="免费评估">
         <span>免费评估</span>
-        <img src="images/online_consultant.png" width="24" height="22" alt="在线咨询">
+        <img src="images/online_consultant.png"  width="24" height="22" alt="在线咨询">
         <span>在线咨询</span>
     </div>
     <div class="consult_form">
@@ -1867,7 +2179,7 @@
             <input name="name"  type="text" required="required" placeholder="姓名">
             <input class="mb25" name="tel" required="required" type="tel" placeholder="电话号码" maxlength="11">
             <button type="submit" class="assess_btn">立即评估</button>
-            <button class="online_btn">在线咨询</button>
+            <button  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="online_btn">在线咨询</button>
         </form>
     </div>
 </div>
@@ -1903,5 +2215,24 @@
 </script>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    window.onload = function() {
+        var from = sessionStorage.getItem("tiao");
+        if(from == 'jing') {
+            //balabala  要触发的点击事件
+            $('#jingmao').click()
+            window.location.href='course.html#jingpinmao'
+            sessionStorage.setItem("tiao",""); //销毁 from 防止在b页面刷新 依然触发$('#xxx').click()
+        }else if (from == 'ming'){
+            $('#jingmao').click()
+            window.location.href='course.html#wen'
+            sessionStorage.setItem("tiao",""); //销毁 from 防止在b页面刷新 依然触发$('#xxx').click()
+        }else {
+            $('#wenmao').click()
+            window.location.href='course.html#wen'
+        }
+    }
+
+</script>
 </body>
 </html>

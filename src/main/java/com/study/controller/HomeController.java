@@ -35,6 +35,9 @@ public class HomeController {
         List<Article>newslist=hm.newslist();
         List<FriendlyLink>meiti=hm.meiti();
         List<FriendlyLink>jigou=hm.jigou();
+        List<Erweima>erweimaList=hm.erweilist();
+
+
 
 
         Img img=new Img();
@@ -55,11 +58,17 @@ public class HomeController {
         view.addObject("url",WebAdress.url);
         view.addObject("meiti",meiti);
         view.addObject("jigou",jigou);
+        view.addObject("erweimalist",erweimaList);
         logger.trace("Welcome to Study-In-Japan!");
         return view;
     }
 
+     @RequestMapping(value = "/questionAndAnswer.html")
+     public ModelAndView questionAndAnswer(){
+          ModelAndView modelAndView =new ModelAndView("questionAndAnswer");
 
+          return modelAndView;
+     }
     //提交评估
     @RequestMapping(value = "/assess.html")
     public ModelAndView assess(HttpServletRequest request,

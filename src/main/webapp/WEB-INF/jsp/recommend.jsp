@@ -62,10 +62,10 @@
     <div class="tab_banner_shadow"></div>
     <div class="tabs_item">
         <ul>
-            <li  <c:if test="${type==0}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=0">全部大学<span>日文名字</span></a></li>
-            <li  <c:if test="${type==1}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=1">国立大学<span>日文名字</span></a></li>
-            <li  <c:if test="${type==2}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=2">私立大学<span>日文名字</span></a></li>
-            <li  <c:if test="${type==3}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=3">公历大学<span>日文名字</span></a></li>
+            <li  <c:if test="${type==0}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=0">全部大学<span>すべての大学</span></a></li>
+            <li  <c:if test="${type==1}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=1">国立大学<span>国立大学</span></a></li>
+            <li  <c:if test="${type==2}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=2">私立大学<span>私立大学</span></a></li>
+            <li  <c:if test="${type==3}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=3">公历大学<span>西紀大学</span></a></li>
         </ul>
     </div>
 </div>
@@ -586,7 +586,7 @@
                 <input type="text" placeholder="姓名">
                 <input class="mb25" type="tel" placeholder="电话号码">
                 <button class="assess_btn">立即评估</button>
-                <button class="online_btn">在线咨询</button>
+                <button class="online_btn"  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')">在线咨询</button>
             </form>
         </div>
 

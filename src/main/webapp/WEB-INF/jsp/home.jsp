@@ -24,7 +24,7 @@
         <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li class="current">
-                <a href="" target="_blank">
+                <a  href="" target="_blank">
                     首页
                     <p>ホームページ</p>
                 </a>
@@ -78,7 +78,9 @@
             <input required="required" class="normal name" type="text" placeholder="姓名">
             <input required="required" class="normal tel" type="tel" placeholder="电话号码" maxlength="11">
             <input class="button submit" type="submit" value="立即评估">
-            <input class="button inline" type="button" value="在线咨询">
+           <input onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="button inline" type="button" value="在线咨询">
+            <script>
+            </script>
         </form>
     </div>
 </div>
@@ -89,7 +91,7 @@
         <h2>英才进学塾优势  我々の強み</h2>
         <ul class="advantage_box">
             <li>
-                <a href="#">
+                <a href="javascript:void(0)" onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')">
                     <div class="advantage_card">
                         <img src="images/advantage_pic1.png" width="212" height="212" alt="亲临日本">
                         <h4>亲临日本</h4>
@@ -111,7 +113,7 @@
             <li>
                 <a href="course.html">
                     <div class="advantage_card">
-                        <img src="images/advantage_pic3.png" width="212" height="212" alt="精品小班">
+                        <a href="course.html" onclick="tiaojing()"><img src="images/advantage_pic3.png" width="212" height="212" alt="精品小班"></a>
                         <h4>精品小班</h4>
                         <span>少人数教育</span>
                         <p>班级规制，通过对班级规模的限制确保为每一位学员提供周到准确的指导服务。</p>
@@ -121,7 +123,7 @@
             <li>
                 <a href="rc/recommend.html">
                     <div class="advantage_card">
-                        <img src="images/advantage_pic4.png" width="212" height="212" alt="搭配灵活">
+                        <a href="course.html" onclick="tiaoming()"><img src="images/advantage_pic4.png" width="212" height="212" alt="搭配灵活"></a>
                         <h4>搭配灵活</h4>
                         <span>フレキシブルな教育配置</span>
                         <p>根据学员的不同特点和问题进行个性化指导，为每一个学生找到适合ta的学习方法，实现学生潜力开发的最大化。</p>
@@ -138,21 +140,21 @@
         <h2>考学流程  試験と進学の流れ</h2>
         <div class="flow_main">
             <div class="flow_main_item">
-                <i class="flow_icon"></i>
+                <a href="javascript:void(0)" onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')"><i class="flow_icon"></i></a>
                 <div>
                     <h3>专业留学顾问<br>免费咨询</h3>
                     <p>由具备多年日本留学行业的资深顾问为您一一解答，只有您想不到，没有我们做不到。</p>
                 </div>
             </div>
             <div class="flow_main_item">
-                <i class="flow_icon"></i>
+                <a href="javascript:void(0)" onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')"><i class="flow_icon"></i></a>
                 <div>
                     <h3>赴日前备考<br>全套服务</h3>
                     <p>帮助学生订购机票，提供住所房源信息，办理赴日手续，辅助学生选择语言学校，尽己所能为考生来日备考提供便利。</p>
                 </div>
             </div>
             <div class="flow_main_item">
-                <i class="flow_icon"></i>
+                <a href="course.html"><i class="flow_icon"></i></a>
                 <div>
                     <h3>赴日学习<br>金牌教师精准辅导</h3>
                     <p>通过一对一定制的个性化指导，在知识巩固和应试水平提升以外，会对学生志望理由书的撰写和面试制定详尽的针对性策略，为考生在考试中遇到的实际流程打实铺垫和准备。</p>
@@ -166,7 +168,7 @@
                 </div>
             </div>
             <div class="flow_main_item">
-                <i class="flow_icon"></i>
+               <a href="rc/recommend.html"> <i class="flow_icon"></i></a>
                 <div>
                     <h3>拿到Offer<br>进入梦想学府</h3>
                     <p>帮助所有英才学子完成考学目标！</p>
@@ -437,14 +439,14 @@
         <li>
 
                 <div class="answer_card">
-                    <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
+                    <p><i></i>1.塾是什么？</p>
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
 
         </li>
         <li>
                 <div class="answer_card">
-                    <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
+                    <p><i></i>2.去留学必须要上塾吗？</p>
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
         </li>
@@ -454,8 +456,9 @@
                     <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
                 </div>
         </li>
+
     </ul>
-    <a class="more_link" href="#">更多解答</a>
+    <a class="more_link" href="questionAndAnswer.html">更多解答</a>
 </div>
 
 <div class="assessment">
@@ -530,14 +533,12 @@
             <p>©  2017 北京中天艺圣文化传媒有限公司 保留一切权利</p>
         </div>
         <ul class="QR_code">
-            <li>
-                <p>官方微信</p>
-                <img src="" width="125" height="125" alt="官方微信二维码">
-            </li>
-            <li>
-                <p>官方微博</p>
-                <img src="" width="125" height="125" alt="官方微博二维码">
-            </li>
+            <c:forEach var="item" items="${erweimalist}">
+                <li style="margin-right: 40px">
+                    <p>${item.name}</p>
+                    <img src="${url}${item.url}" width="125" height="125" alt="${item.name}">
+                </li>
+            </c:forEach>
         </ul>
     </div>
 </div>
@@ -568,6 +569,26 @@
             slideShadows : false// 页面阴影效果
         }
     });
+    
+    function tiaojing() {
+        sessionStorage.setItem("tiao","jing");
+         return true;
+    }
+    function tiaoming() {
+        sessionStorage.setItem("tiao","ming");
+        return true;
+    }
+
 </script>
+<%--<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?52d04642571a502b8b15e7f9f15caa91";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>--%>
+
 </body>
 </html>

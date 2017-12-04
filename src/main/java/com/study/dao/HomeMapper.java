@@ -14,4 +14,5 @@ public interface HomeMapper {
     List<FriendlyLink>meiti();
     List<FriendlyLink>jigou();
     int addassess(@Param("assess")Assess assess);
+    List<Erweima>erweilist();
 }

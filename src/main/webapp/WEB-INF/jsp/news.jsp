@@ -409,7 +409,7 @@
                 <input type="text" placeholder="姓名">
                 <input class="mb25" type="tel" placeholder="电话号码">
                 <button class="assess_btn">立即评估</button>
-                <button class="online_btn">在线咨询</button>
+                <button onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="online_btn">在线咨询</button>
             </form>
         </div>
     </div>

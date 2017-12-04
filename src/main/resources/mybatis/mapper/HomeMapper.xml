@@ -26,6 +26,10 @@
         SELECT * FROM cms_friendlyLink WHERE mediaOrInstitutions=2
     </select>
 
+    <select id="erweilist" resultType="com.study.entity.Erweima">
+        SELECT * FROM erweima
+    </select>
+
     <insert id="addassess">
       INSERT into assess(chuli,aname,phone,content)VALUES(#{assess.chuli},#{assess.aname},#{assess.phone},#{assess.content});
     </insert>
