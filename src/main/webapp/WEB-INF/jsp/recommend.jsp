@@ -31,23 +31,23 @@
             <li>
                 <a href="course.html">
                     精品课程
-                    <p>逸品課程</p>
+                    <p>プレミア課程</p>
                 </a>
             </li>
             <li>
                 <a href="teacher.html">
                     优秀师资
-                    <p>優秀な教師</p>
+                    <p>優秀な教師チーム</p>
                 </a>
             </li>
             <li class="current">
-                <a href="rc/recommend.html">
+                <a href="rc/recommend.html?pnow=1&type=0">
                     推荐名校
-                    <p>名門校を推薦する</p>
+                    <p>名門校の推薦</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="news/newsdetail.html?id=45">
                     关于英才
                     <p>英才について</p>
                 </a>
@@ -63,9 +63,9 @@
     <div class="tabs_item">
         <ul>
             <li  <c:if test="${type==0}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=0">全部大学<span>すべての大学</span></a></li>
-            <li  <c:if test="${type==1}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=1">国立大学<span>国立大学</span></a></li>
+            <li  <c:if test="${type==1}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=1">国公立大学<span>国公立大学</span></a></li>
             <li  <c:if test="${type==2}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=2">私立大学<span>私立大学</span></a></li>
-            <li  <c:if test="${type==3}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=3">公历大学<span>西紀大学</span></a></li>
+          <%--  <li  <c:if test="${type==3}">class="current"</c:if>><a href="rc/recommend.html?pnow=1&type=3">公立大学<span>西紀大学</span></a></li>--%>
         </ul>
     </div>
 </div>

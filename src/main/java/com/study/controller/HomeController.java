@@ -108,6 +108,13 @@ public class HomeController {
         return view;
     }
 
+    @RequestMapping(value = "/aboutYingcai.html")
+    public  ModelAndView aboutYingcai() {
+        ModelAndView view = new ModelAndView("aboutYingcai");
+        return view;
+    }
+
+
 
 
     @RequestMapping(value = "/recommend_detail.html")

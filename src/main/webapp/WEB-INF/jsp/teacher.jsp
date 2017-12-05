@@ -30,23 +30,23 @@
             <li>
                 <a href="course.html">
                     精品课程
-                    <p>逸品課程</p>
+                    <p>プレミア課程</p>
                 </a>
             </li>
             <li class="current">
                 <a href="teacher.html">
                     优秀师资
-                    <p>優秀な教師</p>
+                    <p>優秀な教師チーム</p>
                 </a>
             </li>
             <li>
                 <a href="rc/recommend.html?pnow=1&type=0">
                     推荐名校
-                    <p>名門校を推薦する</p>
+                    <p>名門校の推薦</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="news/newsdetail.html?id=45">
                     关于英才
                     <p>英才について</p>
                 </a>

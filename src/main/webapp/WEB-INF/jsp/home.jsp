@@ -24,7 +24,7 @@
         <h1><img src="images/logo.png" width="213" height="61" alt="英才"></h1>
         <ul>
             <li class="current">
-                <a  href="" target="_blank">
+                <a href="">
                     首页
                     <p>ホームページ</p>
                 </a>
@@ -32,23 +32,23 @@
             <li>
                 <a href="course.html">
                     精品课程
-                    <p>逸品課程</p>
+                    <p>プレミア課程</p>
                 </a>
             </li>
             <li>
                 <a href="teacher.html">
                     优秀师资
-                    <p>優秀な教師</p>
+                    <p>優秀な教師チーム</p>
                 </a>
             </li>
             <li>
-                <a href="rc/recommend.html">
+                <a href="rc/recommend.html?pnow=1&type=0">
                     推荐名校
-                    <p>名門校を推薦する</p>
+                    <p>名門校の推薦</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="news/newsdetail.html?id=45">
                     关于英才
                     <p>英才について</p>
                 </a>
@@ -105,7 +105,7 @@
                     <div class="advantage_card">
                         <img src="images/advantage_pic2.png" width="212" height="212" alt="师资优秀">
                         <h4>师资优秀</h4>
-                        <span>優秀な教師チーム</span>
+                        <span>優秀な教師</span>
                         <p>所有英才教师均为国际水准的金牌教师，经验丰富，有众多成功案例积累的独创课程。</p>
                     </div>
                 </a>
@@ -125,9 +125,9 @@
                     <div class="advantage_card">
                         <a href="course.html" onclick="tiaoming()"><img src="images/advantage_pic4.png" width="212" height="212" alt="搭配灵活"></a>
                         <h4>搭配灵活</h4>
-                        <span>フレキシブルな教育配置</span>
+                        <span>フレキシブルな教育配置/span>
                         <p>根据学员的不同特点和问题进行个性化指导，为每一个学生找到适合ta的学习方法，实现学生潜力开发的最大化。</p>
-                    </div>
+                        </span></div>
                 </a>
             </li>
         </ul>
