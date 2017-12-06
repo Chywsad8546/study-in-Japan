@@ -1,9 +1,3 @@
-package com.study;
-
-
-
-
-
 import org.junit.Test;
 
 import java.util.Random;
