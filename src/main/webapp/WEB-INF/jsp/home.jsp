@@ -187,69 +187,109 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/case_pic1.png" width="100" height="" alt="刘思垒同学">
-                            <span>刘思垒同学</span>
+                            <img src="images/wustudent.png" width="100" height="" alt="刘思垒同学">
+                            <span>吴同学</span>
                         </p>
                         <ul>
-                            <li class="case_item_sort"><em>学生情况：</em><span>北京林业大学  大四</span></li>
-                            <li class="case_item_sort"><em>专业：</em><span>英语</span></li>
-                            <li class="case_item_sort"><em>录取院校：</em><span>东京大学 学際情報学府 学際情報学专业</span></li>
-                            <li class="case_item_sort"><em>日语：</em><span>N1</span></li>
-                            <li class="case_item_sort"><em>GPA成绩：</em><span>3.2</span></li>
-                            <li class="case_item_sort"><em>入学季：</em><span>2016.10</span></li>
+                            <li class="case_item_sort"><em>学生情况：</em><span>高中毕业</span></li>
+                            <li class="case_item_sort"><em>录取院校：</em><span>早稻田 创造理工学部</span></li>
+                            <li class="case_item_sort"><em>日语：</em><span>N2</span></li>
+                            <li class="case_item_sort"><em>其他科目：</em><span>基础牢固</span></li>
                         </ul>
                     </div>
                     <hr>
                     <ul>
-                        <li class="case_item_sort"><em>优势：</em><span>出身背景好，日语、英语成绩具备，非常配合。</span></li>
-                        <li class="case_item_sort"><em>劣势：</em><span>GPA不够高，对于申请没有自信，数学工科成绩不理想。</span></li>
-                        <li class="case_item_sort"><em>英才辅导：</em><span>快速帮助学生精准分析弱势以及选定导师进行弱势课题的学习，突出学生优势亮点；关心学生状态并协助学生自我调整。</span></li>
+                        <li class="case_item_sort"><em>优势：</em><span>日语基础较好，其他科目基础不错</span></li>
+                        <li class="case_item_sort"><em>劣势：</em><span>择校十分敷衍</span></li>
+                        <li class="case_item_sort"><em>英才辅导：</em><span>分析学生强弱项并进行针对辅导</span></li>
                     </ul>
                     <div class="mask"></div>
                 </div>
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/case_pic1.png" width="100" height="" alt="刘思垒同学">
-                            <span>刘思垒同学</span>
+                            <img src="images/yanstudent.png" width="100" height="" alt="刘思垒同学">
+                            <span>廖同学</span>
                         </p>
                         <ul>
-                            <li class="case_item_sort"><em>学生情况：</em><span>北京林业大学  大四</span></li>
-                            <li class="case_item_sort"><em>专业：</em><span>英语</span></li>
-                            <li class="case_item_sort"><em>录取院校：</em><span>东京大学 学際情報学府 学際情報学专业</span></li>
-                            <li class="case_item_sort"><em>日语：</em><span>N1</span></li>
-                            <li class="case_item_sort"><em>GPA成绩：</em><span>3.2</span></li>
-                            <li class="case_item_sort"><em>入学季：</em><span>2016.10</span></li>
+                            <li class="case_item_sort"><em>学生情况：</em><span>高中毕业</span></li>
+                            <li class="case_item_sort"><em>其他科目：</em><span>较好</span></li>
+                            <li class="case_item_sort"><em>录取院校：</em><span>早稻田 基干理工学部</span></li>
+                            <li class="case_item_sort"><em>日语：</em><span>N2</span></li>
                         </ul>
                     </div>
                     <hr>
                     <ul>
-                        <li class="case_item_sort"><em>优势：</em><span>出身背景好，日语、英语成绩具备，非常配合。</span></li>
-                        <li class="case_item_sort"><em>劣势：</em><span>GPA不够高，对于申请没有自信，数学工科成绩不理想。</span></li>
-                        <li class="case_item_sort"><em>英才辅导：</em><span>快速帮助学生精准分析弱势以及选定导师进行弱势课题的学习，突出学生优势亮点；关心学生状态并协助学生自我调整。</span></li>
+                        <li class="case_item_sort"><em>优势：</em><span>三科成绩比较平均，自身也非常努力</span></li>
+                        <li class="case_item_sort"><em>劣势：</em><span>目标比较模糊</span></li>
+                        <li class="case_item_sort"><em>英才辅导：</em><span>与学生多次面谈确定将来志向，并针对留考以及校内考帮助学生提高成绩</span></li>
+                    </ul>
+                    <div class="mask"></div>
+                </div>
+                <div class="swiper-slide case_item">
+                <div class="clearfix">
+                    <p>
+                        <img src="images/quanstudent.png" width="100" height="" alt="刘思垒同学">
+                        <span>权同学</span>
+                    </p>
+                    <ul>
+                        <li class="case_item_sort"><em>学生情况：</em><span>高中毕业</span></li>
+                        <li class="case_item_sort"><em>其他科目：</em><span>较弱</span></li>
+                        <li class="case_item_sort"><em>录取院校：</em><span>早稻田 创造理工学部</span></li>
+                        <li class="case_item_sort"><em>日语：</em><span>N2</span></li>
+
+                    </ul>
+                </div>
+                <hr>
+                <ul>
+                    <li class="case_item_sort"><em>优势：</em><span>由于喜欢日本偶像日语学习非常积极</span></li>
+                    <li class="case_item_sort"><em>劣势：</em><span>除了日语其他科目较差</span></li>
+                    <li class="case_item_sort"><em>英才辅导：</em><span>发挥该学生自身优势，提高日语成绩，针对志向制定辅导计划</span></li>
+                </ul>
+                <div class="mask"></div>
+            </div>
+
+                <div class="swiper-slide case_item">
+                    <div class="clearfix">
+                        <p>
+                            <img src="images/xiaostudent.png" width="100" height="" alt="刘思垒同学">
+                            <span>肖同学</span>
+                        </p>
+                        <ul>
+                            <li class="case_item_sort"><em>学生情况：</em><span>高中毕业</span></li>
+                            <li class="case_item_sort"><em>其他科目：</em><span>很好</span></li>
+                            <li class="case_item_sort"><em>录取院校：</em><span>早稻田 政治经济学部</span></li>
+                            <li class="case_item_sort"><em>日语：</em><span>N1</span></li>
+
+                        </ul>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li class="case_item_sort"><em>优势：</em><span>在国内已确定留学计划，自学过留考科目</span></li>
+                        <li class="case_item_sort"><em>劣势：</em><span>缺少做题技巧</span></li>
+                        <li class="case_item_sort"><em>英才辅导：</em><span>该同学基础牢固，主要教授留考以及校内考的做题技巧</span></li>
                     </ul>
                     <div class="mask"></div>
                 </div>
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/case_pic1.png" width="100" height="" alt="刘思垒同学">
-                            <span>刘思垒同学</span>
+                            <img src="images/tianstudent.png" width="100" height="" alt="刘思垒同学">
+                            <span>田同学</span>
                         </p>
                         <ul>
-                            <li class="case_item_sort"><em>学生情况：</em><span>北京林业大学  大四</span></li>
-                            <li class="case_item_sort"><em>专业：</em><span>英语</span></li>
-                            <li class="case_item_sort"><em>录取院校：</em><span>东京大学 学際情報学府 学際情報学专业</span></li>
-                            <li class="case_item_sort"><em>日语：</em><span>N1</span></li>
-                            <li class="case_item_sort"><em>GPA成绩：</em><span>3.2</span></li>
-                            <li class="case_item_sort"><em>入学季：</em><span>2016.10</span></li>
+                            <li class="case_item_sort"><em>学生情况：</em><span>高中毕业</span></li>
+                            <li class="case_item_sort"><em>其他科目：</em><span>中等</span></li>
+                            <li class="case_item_sort"><em>录取院校：</em><span>明治大学 商学部  </span></li>
+                            <li class="case_item_sort"><em>日语：</em><span>N2</span></li>
+
                         </ul>
                     </div>
                     <hr>
                     <ul>
-                        <li class="case_item_sort"><em>优势：</em><span>出身背景好，日语、英语成绩具备，非常配合。</span></li>
-                        <li class="case_item_sort"><em>劣势：</em><span>GPA不够高，对于申请没有自信，数学工科成绩不理想。</span></li>
-                        <li class="case_item_sort"><em>英才辅导：</em><span>快速帮助学生精准分析弱势以及选定导师进行弱势课题的学习，突出学生优势亮点；关心学生状态并协助学生自我调整。</span></li>
+                        <li class="case_item_sort"><em>优势：</em><span>接受能力高，语感较好</span></li>
+                        <li class="case_item_sort"><em>劣势：</em><span>对日语以外的科目学习欲望较低</span></li>
+                        <li class="case_item_sort"><em>英才辅导：</em><span>分析学生强弱项并进行针对辅导</span></li>
                     </ul>
                     <div class="mask"></div>
                 </div>
@@ -258,126 +298,94 @@
         <div class="swiper-button-next case_btn_next"></div>
         <div class="swiper-button-prev case_btn_prev"></div>
     </div>
-    <table>
+    <table style="width: 1200px">
         <tr>
-            <th>学生姓名</th>
-            <th>出身院校</th>
-            <th>专业</th>
-            <th>日语考试</th>
-            <th>日语成绩</th>
-            <th>英语考试</th>
-            <th>英语成绩</th>
-            <th>录取院校</th>
-            <th>录取院系</th>
-            <th>录取专业</th>
+            <th>大学</th>
+            <th>留考日语</th>
+            <th>能力考</th>
+            <th>英语</th>
+            <th>录取学部</th>
+            <th>学科</th>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>青山学院大学</td>
+            <td>311</td>
+            <td>n1</td>
+            <td>---</td>
+            <td>社会情报</td>
+            <td>社会情报</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>中央大学</td>
+            <td>299 </td>
+            <td>---</td>
+            <td>TOEFL60</td>
+            <td>经济</td>
+            <td>国际经济</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>中央大学</td>
+            <td>296</td>
+            <td>---</td>
+            <td>TOEFL61</td>
+            <td>经济</td>
+            <td>经济</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>明治大学</td>
+            <td>305</td>
+            <td>n1</td>
+            <td>TOEIC725</td>
+            <td>商</td>
+            <td>商</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>同志社大学</td>
+            <td>287</td>
+            <td>n2</td>
+            <td>---</td>
+            <td>社会</td>
+            <td>产业关系</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>立命馆大学</td>
+            <td>316</td>
+            <td>n1</td>
+            <td>---</td>
+            <td>产业社会2</td>
+            <td>現代社会-メディア社会</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>立命馆大学</td>
+            <td>273</td>
+            <td>n2</td>
+            <td>TOEFL52</td>
+            <td>理工</td>
+            <td>環境システム工</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>法政大学 </td>
+            <td>319</td>
+            <td>n1</td>
+            <td>----</td>
+            <td>经济</td>
+            <td>经济</td>
         </tr>
         <tr>
-            <td>陈同学</td>
-            <td>北京理工大学</td>
-            <td>光电工程 电子信息与技术</td>
-            <td>N1</td>
-            <td>102</td>
-            <td>托福</td>
-            <td>80</td>
-            <td>东京工业大学</td>
-            <td>综合理工学研究科</td>
-            <td>综合理工学研究科</td>
+            <td>法政大学</td>
+            <td>316</td>
+            <td>n1</td>
+            <td>TOEFL80</td>
+            <td>国际文化 </td>
+            <td>国际文化 </td>
+        </tr>
+        <tr>
+            <td>秋田大学</td>
+            <td>296</td>
+            <td>n1</td>
+            <td>----</td>
+            <td>教育文化</td>
+            <td>地域文化-地域社会</td>
         </tr>
     </table>
 </div>
@@ -438,22 +446,22 @@
     <ul class="mb60">
         <li>
 
-                <div class="answer_card">
-                    <p><i></i>1.塾是什么？</p>
-                    <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
+                <div class="answer_card" style="width: 300px">
+                    <p><i></i>留学需要提前多长时间准备？</p>
+                    <p class="mt15"><i></i>至少提前半年才不会手忙脚乱哦（笑）</p>
                 </div>
 
         </li>
         <li>
-                <div class="answer_card">
-                    <p><i></i>2.去留学必须要上塾吗？</p>
-                    <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
+                <div class="answer_card" style="width: 300px">
+                    <p><i></i>去留学必须要上塾吗？</p>
+                    <p class="mt15"><i></i>答案是肯定的，塾针对进学方向进行辅导，如有进学意向的学子在塾中可以得到相关考试的辅导与各项考试相关信息（如各大学科目偏重取向）等多项优势。塾中课程学习速度较快，可以在较短时间内完成课程，考入理想学府。且塾中学习氛围更好，学习更有动力。</p>
                 </div>
         </li>
         <li>
-                <div class="answer_card">
-                    <p><i></i>考取日本大学，需要准备哪些考试呢？</p>
-                    <p class="mt15"><i></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
+                <div class="answer_card" style="width: 300px">
+                    <p><i></i>塾的上课时间是什么时候？会不会和语言学校冲突？</p>
+                    <p class="mt15"><i></i>塾上课的时间一般为平日的六点以后与周末，不会与语言学校冲突。平日其他时间也开放自习室，欢迎同学们来自习。</p>
                 </div>
         </li>
 

@@ -63,10 +63,10 @@
     <div class="tab_banner_shadow"></div>
     <div class="tabs_item">
         <ul>
-           <li class="current"><a href="javascript:void(0)">全部资讯<span>日文名字</span></a></li>
-            <li><a href="javascript:void(0)">留学资讯<span>日文名字</span></a></li>
-            <li><a href="javascript:void(0)">招生资讯<span>日文名字</span></a></li>
-            <li><a href="javascript:void(0)">学习资料<span>日文名字</span></a></li>
+           <li class="current"><a href="javascript:void(0)">一</a></li>
+            <li><a href="javascript:void(0)">二</a></li>
+            <li><a href="javascript:void(0)">三</a></li>
+            <li><a href="javascript:void(0)">四</a></li>
         </ul>
     </div>
 </div>
@@ -79,8 +79,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>1.塾是什么？</span></h3>
+                                <p style="font-size: 16px">塾是辅导来日学子考入大学/大学院所必要课程、加强学生各项能力的培训机构，包括了留考EJU(日语、文理综、数学）、日语能力考（JLPT）、英语、各大学校内考、各大学面试与大学院专业课等多项课程辅导。同时也是为来日学子提供第一手考学有效信息，并且针对个人情况为其学习与进学方向制定计划的咨询机构。</p>
                             </div>
                         </div>
                     </a>
@@ -89,8 +89,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>2.去留学必须要上塾吗？</span></h3>
+                                <p style="font-size: 16px">答案是肯定的，塾针对进学方向进行辅导，如有进学意向的学子在塾中可以得到相关考试的辅导与各项考试相关信息（如各大学科目偏重取向）等多项优势。塾中课程学习速度较快，可以在较短时间内完成课程，考入理想学府。且塾中学习氛围更好，学习更有动力。</p>
                             </div>
                         </div>
                     </a>
@@ -99,8 +99,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>3.塾的上课时间是什么时候？会不会和语言学校冲突？</span></h3>
+                                <p style="font-size: 16px">塾上课的时间一般为平日的六点以后与周末，不会与语言学校冲突。平日其他时间也开放自习室，欢迎同学们来自习。</p>
                             </div>
                         </div>
                     </a>
@@ -109,8 +109,93 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>4.上塾周末休息吗？</span></h3>
+                                <p style="font-size: 16px">在考学的不同阶段所选择的课程有所不同，上课的时间也有不同。若是在留考对策阶段周末就没有时间就休息了，但在校内考对策阶段课程较少，自由时间相对较多。【不过即使是自由时间也得准备报考材料和完成作业，真正的休息时间是拿到录取通知书以后（笑）】</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>5.在日本生活中有困难塾会帮助解决吗？</span></h3>
+                                <p style="font-size: 16px">在分班后有任何生活上的问题都可以问班主任，班主任老师会尽全力帮你的！</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>6.上塾有没有作业？</span></h3>
+                                <p style="font-size: 16px">答案是有的，因为课堂练习时间有限，需要同学们通过家庭作业来巩固知识与熟练技巧。另外，写志望理由书等的报考材料准备性质的“家庭作业”也是不可避免的。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="tabs_cont none">
+            <ul>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>7.塾和语言学校有什么区别？</span></h3>
+                                <p style="font-size: 16px">语言学校主要偏重于日语的学习和语感的培养，学习速度较慢，但可以给学生提供留学签证。语言学校中关于留考与校内考辅导较少，无法满足学生考学需要，必须另行准备。塾主要是以对学生升学各项考试进行辅导，短时间内提高学生语言能力为目的，并为学生提供第一手考学信息，助学生考入理想学府。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>8.留学需要提前多长时间准备？</span></h3>
+                                <p style="font-size: 16px">至少提前半年才不会手忙脚乱哦（笑）</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>9.日本留学考试的考试科目是什么？</span></h3>
+                                <p style="font-size: 16px">留考日语（文理通科）、综合科目（文科）、理化生三选二（理科）、数学Ⅰ（文科）、数学Ⅱ（理科）</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>10.留学生考试是在什么时候？</span></h3>
+                                <p style="font-size: 16px">留学生考试在每年的6月与11月各有一次，一年共两次</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>11.能参加几次留学生考试？如果没考上可以继续考吗？</span></h3>
+                                <p style="font-size: 16px">在日期间内可以多次参加留学生考试，成绩会以报考学校时提交的成绩为标准判定是否录取。另外，留考分数足够高还可以拿到奖学金的哦（笑）。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>12.学文科好还是理科好？</span></h3>
+                                <p style="font-size: 16px">各有千秋，日本在文科与理科两方面都有闪光点。但因为“经营”“经济”等热门学科多为文科学科，且国内理科生来日本转文影响较小，文科人数较多。</p>
                             </div>
                         </div>
                     </a>
@@ -123,8 +208,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>13.在日本可以打工吗？</span></h3>
+                                <p style="font-size: 16px">可以。取得“资格外活动许可”后每周可以打工28小时，但打工会影响到学习，所以考学期间不推荐打工。</p>
                             </div>
                         </div>
                     </a>
@@ -133,8 +218,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>14.在日本考大学需要考英语吗？</span></h3>
+                                <p style="font-size: 16px">需要。日本许多大学报考都是需要托福或托业英语成绩，校内考也会有考英语，不过要求不是那么高。也有一部分大学是不需要英语就可以报考的（如学习院大学）。</p>
                             </div>
                         </div>
                     </a>
@@ -143,8 +228,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>15.留学需要的费用是多少？</span></h3>
+                                <p style="font-size: 16px">言学校学费平均70万日元一年，国公立大学学费50万日元左右一年,私立大学理科学费150万左右日元一年，私立大学文科学费120万左右一年。在加上生活费平均每个月一万元人民币。一年下来平均15万到20万人民币。</p>
                             </div>
                         </div>
                     </a>
@@ -153,28 +238,33 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>16.一般国公立大学对于留考要求多少分数？</span></h3>
+                                <p style="font-size: 16px">各个国公立大学的各个学科要求分数也都有不同，不过普遍比私立大学要求分数高。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>17.如果参加了塾，分数怎么能提到理想的分数？</span></h3>
+                                <p style="font-size: 16px">按时参加课程并按时完成作业，随时与班主任老师沟通修正学习计划。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>18.保证班是什么？如果没考上怎么办？</span></h3>
+                                <p style="font-size: 16px">保证班是能保证学生考上日本TOP50的大学，如果考不上可以退款或免费再学一年</p>
                             </div>
                         </div>
                     </a>
                 </li>
             </ul>
-            <div class="pagination">
-                <div class="pagination_cont">
-                    <a href="#">&laquo;</a>
-                    <a href="#">&lsaquo;</a>
-                    <div class="page_num">
-                        <span>29</span>/<span class="disable">29</span>
-                    </div>
-                    <a href="#" class="disable">&rsaquo;</a>
-                    <a href="#" class="disable">&raquo;</a>
-                </div>
-                <p>
-                    <span>每页<em>10</em>条</span>
-                    <span class="ml10">共<em>1000</em>条</span>
-                </p>
-            </div>
         </div>
         <div class="tabs_cont none">
             <ul>
@@ -182,8 +272,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>19.日本安全吗？</span></h3>
+                                <p style="font-size: 16px">东京是全世界犯罪率最低的城市之一，且国民都很遵守规则，很安全。</p>
                             </div>
                         </div>
                     </a>
@@ -192,8 +282,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>20.留学毕业之后可以留在日本工作吗？</span></h3>
+                                <p style="font-size: 16px">毕业后可以和选择在日本就业，并且近些年中资企业进驻日本，对于留学生雇员需求数量增加。</p>
                             </div>
                         </div>
                     </a>
@@ -202,8 +292,8 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>21.可以帮助找住宿的地方吗？</span></h3>
+                                <p style="font-size: 16px">可以，住房方面会提供帮助。</p>
                             </div>
                         </div>
                     </a>
@@ -212,87 +302,53 @@
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
+                                <h3><span>22.去日本留学有什么要求吗，包括学历什么的？</span></h3>
+                                <p style="font-size: 16px">考大学需要高中或同等学历，大学院需要大学本科学历，专科可以考的大学较少。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>23.留学生考试对日语有什么要求吗？</span></h3>
+                                <p style="font-size: 16px">没有底限，都可以参加。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>24.日本留学对年龄有要求吗？</span></h3>
+                                <p style="font-size: 16px">没有要求，经常还有70，80岁的爷爷奶奶上学呢（笑）</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>25.报了日语留考（EJU）课程还需要参加能力考（JLPT）课程吗？</span></h3>
+                                <p style="font-size: 16px">需要，日语留考主要考察的是大学内听课的能力，能力考考察的综合的日语能力，所以两个考试都有参加的必要。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
+                        <div class="recommend_item_cont clearfix">
+                            <div class="school_msg">
+                                <h3><span>26.如有能力考成绩能上大学吗</span></h3>
+                                <p style="font-size: 16px"> 有些大学是可以用能力考报考的，但数量很少且不如留考有说服力，所以如果是以进学为目的，用留考成绩报考较好。</p>
                             </div>
                         </div>
                     </a>
                 </li>
             </ul>
-            <div class="pagination">
-                <div class="pagination_cont">
-                    <a href="#">&laquo;</a>
-                    <a href="#">&lsaquo;</a>
-                    <div class="page_num">
-                        <span>29</span>/<span class="disable">29</span>
-                    </div>
-                    <a href="#" class="disable">&rsaquo;</a>
-                    <a href="#" class="disable">&raquo;</a>
-                </div>
-                <p>
-                    <span>每页<em>10</em>条</span>
-                    <span class="ml10">共<em>1000</em>条</span>
-                </p>
-            </div>
-        </div>
-        <div class="tabs_cont none">
-            <ul>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>我去恶趣味</span></h3>
-                                <p style="font-size: 16px">我去恶趣味恶趣味请问请问请问额未全额请问请问请问请问请问请问请问请问请问</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="pagination">
-                <div class="pagination_cont">
-                    <a href="#">&laquo;</a>
-                    <a href="#">&lsaquo;</a>
-                    <div class="page_num">
-                        <span>29</span>/<span class="disable">29</span>
-                    </div>
-                    <a href="#" class="disable">&rsaquo;</a>
-                    <a href="#" class="disable">&raquo;</a>
-                </div>
-                <p>
-                    <span>每页<em>10</em>条</span>
-                    <span class="ml10">共<em>1000</em>条</span>
-                </p>
-            </div>
         </div>
     </div>
 
