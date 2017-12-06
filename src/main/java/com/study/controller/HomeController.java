@@ -35,7 +35,7 @@ public class HomeController {
         List<Article>newslist=hm.newslist();
         List<FriendlyLink>meiti=hm.meiti();
         List<FriendlyLink>jigou=hm.jigou();
-        List<Erweima>erweimaList=hm.erweilist();
+
 
 
 
@@ -58,6 +58,7 @@ public class HomeController {
         view.addObject("url",WebAdress.url);
         view.addObject("meiti",meiti);
         view.addObject("jigou",jigou);
+        List<Erweima>erweimaList=hm.erweilist();
         view.addObject("erweimalist",erweimaList);
         logger.trace("Welcome to Study-In-Japan!");
         return view;
@@ -66,7 +67,9 @@ public class HomeController {
      @RequestMapping(value = "/questionAndAnswer.html")
      public ModelAndView questionAndAnswer(){
           ModelAndView modelAndView =new ModelAndView("questionAndAnswer");
-
+         List<Erweima>erweimaList=hm.erweilist();
+         modelAndView.addObject("url",WebAdress.url);
+         modelAndView.addObject("erweimalist",erweimaList);
           return modelAndView;
      }
     //提交评估
@@ -95,6 +98,9 @@ public class HomeController {
     @RequestMapping(value = "/course.html")
     public  ModelAndView course() {
         ModelAndView view = new ModelAndView("course");
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("url",WebAdress.url);
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 
@@ -105,14 +111,12 @@ public class HomeController {
     @RequestMapping(value = "/teacher.html")
     public  ModelAndView teacher() {
         ModelAndView view = new ModelAndView("teacher");
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("url",WebAdress.url);
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 
-    @RequestMapping(value = "/aboutYingcai.html")
-    public  ModelAndView aboutYingcai() {
-        ModelAndView view = new ModelAndView("aboutYingcai");
-        return view;
-    }
 
 
 
@@ -130,6 +134,7 @@ public class HomeController {
     @RequestMapping(value = "/news.html")
     public  ModelAndView news() {
         ModelAndView view = new ModelAndView("news");
+
         return view;
     }
 

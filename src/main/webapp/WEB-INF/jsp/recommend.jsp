@@ -108,73 +108,7 @@
 
                     </c:if>
                 </c:forEach>
-                <%--<li>
-                    <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>早稻田大学</span>日本名字</h3>
-                                <p><img src="images/address_icon.png" width="12" height="16" alt="地址">日本-东京都-新宿区</p>
-                                <dl class="clearfix">
-                                    <dd>院校性质：<em>私立</em></dd>
-                                    <dd>建校年份：<em>1982年</em></dd>
-                                    <dd>中国教育部认证：<em>认证</em></dd>
-                                    <dd>人数：<em>53574人</em></dd>
-                                </dl>
-                            </div>
-                            <div class="school_ranking">
-                                <p><img src="images/ranking_gray.png" width="16" height="16" alt="排名">CWUR日本大学排名</p>
-                                <strong>1</strong>
-                            </div>
-                            <div class="popularity_time">人气：<span>29830</span></div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>早稻田大学</span>日本名字</h3>
-                                <p><img src="images/address_icon.png" width="12" height="16" alt="地址">日本-东京都-新宿区</p>
-                                <dl class="clearfix">
-                                    <dd>院校性质：<em>私立</em></dd>
-                                    <dd>建校年份：<em>1982年</em></dd>
-                                    <dd>中国教育部认证：<em>认证</em></dd>
-                                    <dd>人数：<em>53574人</em></dd>
-                                </dl>
-                            </div>
-                            <div class="school_ranking">
-                                <p><img src="images/ranking_gray.png" width="16" height="16" alt="排名">CWUR日本大学排名</p>
-                                <strong>1</strong>
-                            </div>
-                            <div class="popularity_time">人气：<span>29830</span></div>
-                        </div>
-                    </a>
-                </li>
-                <li>
 
-                    <a class="recommend_list_item clearfix" href="recommend_detail.jsp">
-                        <img src="/images/recommend_list_pic.jpg" width="240" height="180" alt="">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>早稻田大学</span>日本名字</h3>
-                                <p><img src="images/address_icon.png" width="12" height="16" alt="地址">日本-东京都-新宿区</p>
-                                <dl class="clearfix">
-                                    <dd>院校性质：<em>私立</em></dd>
-                                    <dd>建校年份：<em>1982年</em></dd>
-                                    <dd>中国教育部认证：<em>认证</em></dd>
-                                    <dd>人数：<em>53574人</em></dd>
-                                </dl>
-                            </div>
-                            <div class="school_ranking">
-                                <p><img src="images/ranking_gray.png" width="16" height="16" alt="排名">CWUR日本大学排名</p>
-                                <strong>1</strong>
-                            </div>
-                            <div class="popularity_time">人气：<span>29830</span></div>
-                        </div>
-                    </a>
-                </li>--%>
             </ul>
 
             <div class="pagination">
@@ -638,14 +572,12 @@
             <p>©  2017 北京中天艺圣文化传媒有限公司 保留一切权利</p>
         </div>
         <ul class="QR_code">
-            <li>
-                <p>官方微信</p>
-                <img src="" width="125" height="125" alt="官方微信二维码">
-            </li>
-            <li>
-                <p>官方微博</p>
-                <img src="" width="125" height="125" alt="官方微博二维码">
-            </li>
+            <c:forEach var="item" items="${erweimalist}">
+                <li style="margin-right: 40px">
+                    <p>${item.name}</p>
+                    <img src="${url}${item.url}" width="125" height="125" alt="${item.name}">
+                </li>
+            </c:forEach>
         </ul>
     </div>
 </div>

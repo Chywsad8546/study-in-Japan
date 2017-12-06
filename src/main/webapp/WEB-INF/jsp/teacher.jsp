@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -207,14 +208,12 @@
             <p>©  2017 北京中天艺圣文化传媒有限公司 保留一切权利</p>
         </div>
         <ul class="QR_code">
-            <li>
-                <p>官方微信</p>
-                <img src="" width="125" height="125" alt="官方微信二维码">
-            </li>
-            <li>
-                <p>官方微博</p>
-                <img src="" width="125" height="125" alt="官方微博二维码">
-            </li>
+            <c:forEach var="item" items="${erweimalist}">
+                <li style="margin-right: 40px">
+                    <p>${item.name}</p>
+                    <img src="${url}${item.url}" width="125" height="125" alt="${item.name}">
+                </li>
+            </c:forEach>
         </ul>
     </div>
 </div>

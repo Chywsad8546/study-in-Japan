@@ -1,5 +1,6 @@
 package com.study.controller;
 
+import com.study.dao.HomeMapper;
 import com.study.dao.RecommendSchoolMapper;
 import com.study.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ import java.util.Random;
 public class RecommendController {
     @Autowired
     private RecommendSchoolMapper rc;
+
+    @Autowired
+    private HomeMapper hm;
     /**
      * 推荐名校
      * @return
@@ -42,7 +46,8 @@ public class RecommendController {
         School school =new School();
         school.setSchoolnature(type);
         List<School> schools=rc.schoollist(school,pg);
-
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("erweimalist",erweimaList);
         view.addObject("type",type);
         view.addObject("schools",schools);
         view.addObject("page",pg);
@@ -96,7 +101,8 @@ public class RecommendController {
 
 
         double rate=rc.cjrate(1);
-
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("erweimalist",erweimaList);
         view.addObject("school",school);
         view.addObject("tuition",tuition);
         view.addObject("rate",rate);
