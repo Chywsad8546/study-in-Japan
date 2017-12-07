@@ -16,7 +16,7 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="css/global.css?v2016">
-    <link rel="stylesheet" href="css/index.css?v=2017">
+    <link rel="stylesheet" href="css/index.css?v=20">
 </head>
 <body>
 <div class="header clearfix">
@@ -187,7 +187,7 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/wustudent.png" width="100" height="" alt="刘思垒同学">
+                            <img src="images/wustudent.png" width="100" height="" alt="权同学">
                             <span>吴同学</span>
                         </p>
                         <ul>
@@ -208,7 +208,7 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/yanstudent.png" width="100" height="" alt="刘思垒同学">
+                            <img src="images/yanstudent.png" width="100" height="" alt="廖同学">
                             <span>廖同学</span>
                         </p>
                         <ul>
@@ -229,7 +229,7 @@
                 <div class="swiper-slide case_item">
                 <div class="clearfix">
                     <p>
-                        <img src="images/quanstudent.png" width="100" height="" alt="刘思垒同学">
+                        <img src="images/quanstudent.png" width="100" height="" alt="权同学">
                         <span>权同学</span>
                     </p>
                     <ul>
@@ -252,7 +252,7 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/xiaostudent.png" width="100" height="" alt="刘思垒同学">
+                            <img src="images/xiaostudent.png" width="100" height="" alt="肖同学">
                             <span>肖同学</span>
                         </p>
                         <ul>
@@ -274,7 +274,7 @@
                 <div class="swiper-slide case_item">
                     <div class="clearfix">
                         <p>
-                            <img src="images/tianstudent.png" width="100" height="" alt="刘思垒同学">
+                            <img src="images/tianstudent.png" width="100" height="" alt="田同学">
                             <span>田同学</span>
                         </p>
                         <ul>
@@ -300,6 +300,7 @@
     </div>
     <table style="width: 1200px">
         <tr>
+            <th>刘同学</th>
             <th>大学</th>
             <th>留考日语</th>
             <th>能力考</th>
@@ -308,6 +309,7 @@
             <th>学科</th>
         </tr>
         <tr>
+            <th>张同学</th>
             <td>青山学院大学</td>
             <td>311</td>
             <td>n1</td>
@@ -316,6 +318,7 @@
             <td>社会情报</td>
         </tr>
         <tr>
+            <th>陈同学</th>
             <td>中央大学</td>
             <td>299 </td>
             <td>---</td>
@@ -324,6 +327,7 @@
             <td>国际经济</td>
         </tr>
         <tr>
+            <th>肖同学</th>
             <td>中央大学</td>
             <td>296</td>
             <td>---</td>
@@ -332,14 +336,16 @@
             <td>经济</td>
         </tr>
         <tr>
+            <th>李同学</th>
             <td>明治大学</td>
             <td>305</td>
             <td>n1</td>
-            <td>TOEIC725</td>
+            <td>TOEFL75</td>
             <td>商</td>
             <td>商</td>
         </tr>
         <tr>
+            <th>王同学</th>
             <td>同志社大学</td>
             <td>287</td>
             <td>n2</td>
@@ -348,14 +354,16 @@
             <td>产业关系</td>
         </tr>
         <tr>
+            <th>赵同学</th>
             <td>立命馆大学</td>
             <td>316</td>
             <td>n1</td>
             <td>---</td>
-            <td>产业社会2</td>
+            <td>产业社会</td>
             <td>現代社会-メディア社会</td>
         </tr>
         <tr>
+            <th>孙同学</th>
             <td>立命馆大学</td>
             <td>273</td>
             <td>n2</td>
@@ -364,6 +372,7 @@
             <td>環境システム工</td>
         </tr>
         <tr>
+            <th>周同学</th>
             <td>法政大学 </td>
             <td>319</td>
             <td>n1</td>
@@ -372,6 +381,7 @@
             <td>经济</td>
         </tr>
         <tr>
+            <th>沈同学</th>
             <td>法政大学</td>
             <td>316</td>
             <td>n1</td>
@@ -380,6 +390,7 @@
             <td>国际文化 </td>
         </tr>
         <tr>
+            <th>徐同学</th>
             <td>秋田大学</td>
             <td>296</td>
             <td>n1</td>
@@ -511,7 +522,7 @@
             <c:forEach items="${meiti}" var="item">
                     <li>
                         <a rel="nofollow"  href="${item.webAddress}">
-                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="160" height="80">
+                        <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="58">
                         </a>
                     </li>
             </c:forEach>
@@ -524,7 +535,7 @@
             <c:forEach items="${jigou}" var="item">
                 <li>
                     <a rel="nofollow" href="${item.webAddress}">
-                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="160" height="80">
+                    <img src="${url}${item.webLogo}" alt="${item.webTitle}" width="200" height="65">
                     </a>
                 </li>
             </c:forEach>
