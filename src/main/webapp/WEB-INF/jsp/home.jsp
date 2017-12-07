@@ -562,32 +562,33 @@
     </div>
 </div>
 
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/swiper-3.4.2.min.js"></script>
 <script>
-    var mySwiper = new Swiper ('.index_banner', {
-        autoplay: 3000,
-        loop: true,
+    $(function(){
+        console.log("qqq")
+        browserRedirect();
+    });
 
-        // 分页器
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-    });
-    var CaseSwiper = new Swiper('.swiper_case', {
-        loop : true,
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        nextButton: '.case_btn_next',
-        prevButton: '.case_btn_prev',
-        slidesPerView: 'auto',
-        coverflow: {
-            rotate: 0,// 旋转的角度
-            stretch: 82,// 拉伸   图片间左右的间距和密集度
-            depth: 150,// 深度   切换图片间上下的间距和密集度
-            modifier: 2,// 修正值 该值越大前面的效果越明显
-            slideShadows : false// 页面阴影效果
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+            }else{
+               // window.location.href='http://m.ycjxschool.com/';
+                window.location.href='http://m.ycjxschool.com/';
+            }
         }
-    });
+
+
     
     function tiaojing() {
         sessionStorage.setItem("tiao","jing");
