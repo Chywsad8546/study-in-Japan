@@ -139,7 +139,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">28万日元</button>
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">38万日元</button>
                     </div>
                 </div>
             </div>
@@ -371,7 +371,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">45万日元</button>
                     </div>
                 </div>
             </div>
@@ -448,7 +448,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">30万日元</button>
                     </div>
                 </div>
             </div>
@@ -562,7 +562,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">40万日元</button>
                     </div>
                 </div>
             </div>
@@ -684,7 +684,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">47万日元</button>
                     </div>
                 </div>
             </div>
@@ -810,7 +810,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">37万日元</button>
                     </div>
                 </div>
             </div>
@@ -976,7 +976,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">40万日元</button>
                     </div>
                 </div>
             </div>
@@ -1154,7 +1154,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">57万日元</button>
                     </div>
                 </div>
             </div>
@@ -1336,7 +1336,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">67万日元</button>
                     </div>
                 </div>
             </div>
@@ -1459,7 +1459,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">35万日元</button>
                     </div>
                 </div>
             </div>
@@ -1625,7 +1625,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">45万日元</button>
                     </div>
                 </div>
             </div>
@@ -1803,7 +1803,7 @@
                 </div>
                 <div class="price_fix">
                     <span>获取学费价格</span>
-                    <button onclick="xianping()" class="">立即评估</button>
+                    <button onclick="xianping()" class="">55万日元</button>
                 </div>
             </div>
         </div>
@@ -1985,7 +1985,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">67万日元</button>
                     </div>
                 </div>
             </div>
@@ -2177,7 +2177,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">112万日元</button>
                     </div>
                 </div>
             </div>
@@ -2359,7 +2359,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">75万日元</button>
                     </div>
                 </div>
             </div>
@@ -2553,7 +2553,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">275万日元</button>
                     </div>
                 </div>
             </div>
@@ -2740,7 +2740,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">112万日元</button>
                     </div>
                 </div>
             </div>
@@ -2922,7 +2922,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">75万日元</button>
                     </div>
                 </div>
             </div>
@@ -3112,7 +3112,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">275万日元</button>
                     </div>
                 </div>
             </div>
@@ -3167,7 +3167,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">12万日元</button>
                     </div>
 
                 </div>
@@ -3230,7 +3230,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">15万日元</button>
                     </div>
                 </div>
             </div>
@@ -3308,7 +3308,7 @@
                     </div>
                     <div class="price_fix">
                         <span>获取学费价格</span>
-                        <button onclick="xianping()" class="">立即评估</button>
+                        <button onclick="xianping()" class="">25万日元</button>
                     </div>
                 </div>
             </div>

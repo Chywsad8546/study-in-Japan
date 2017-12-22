@@ -15,7 +15,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/news_recommend.css?v=2017">
+    <link rel="stylesheet" href="css/quan.css">
 </head>
 <body>
 <div class="header clearfix">
@@ -63,82 +63,91 @@
     <div class="tab_banner_shadow"></div>
     <div class="tabs_item">
         <ul>
-           <li class="current"><a href="javascript:void(0)">一</a></li>
-            <li><a href="javascript:void(0)">二</a></li>
-            <li><a href="javascript:void(0)">三</a></li>
-            <li><a href="javascript:void(0)">四</a></li>
+           <li class="current"><a href="javascript:void(0)">咨询</a></li>
         </ul>
     </div>
 </div>
 
 <div class="tabs_cont_box clearfix">
     <div class="tabs_cont_height">
+
         <div class="tabs_cont">
             <ul>
+<c:forEach var="item" items="${queList}">
                 <li>
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
-                                <h3><span>1.塾是什么？</span></h3>
-                                <p style="font-size: 16px">塾是辅导来日学子考入大学/大学院所必要课程、加强学生各项能力的培训机构，包括了留考EJU(日语、文理综、数学）、日语能力考（JLPT）、英语、各大学校内考、各大学面试与大学院专业课等多项课程辅导。同时也是为来日学子提供第一手考学有效信息，并且针对个人情况为其学习与进学方向制定计划的咨询机构。</p>
+                                <h3><span>${item.question}</span></h3>
+                                <p style="font-size: 16px">${item.answer}</p>
                             </div>
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>2.去留学必须要上塾吗？</span></h3>
-                                <p style="font-size: 16px">答案是肯定的，塾针对进学方向进行辅导，如有进学意向的学子在塾中可以得到相关考试的辅导与各项考试相关信息（如各大学科目偏重取向）等多项优势。塾中课程学习速度较快，可以在较短时间内完成课程，考入理想学府。且塾中学习氛围更好，学习更有动力。</p>
+</c:forEach>
+
+                <div class="pagination">
+                    <c:choose>
+                        <c:when test="${page.pageCount==1||page.pageCount==0}">
+                            <div class="pagination_cont">
+                                <a href="#" onclick="return false;" class="disable">&laquo;</a>
+                                <a href="#" onclick="return false;" class="disable">&lsaquo;</a>
+                                <div class="page_num">
+                                    <span>1</span>
+                                </div>
+                                <a href="#" onclick="return false;" class="disable">&rsaquo;</a>
+                                <a href="#" onclick="return false;" class="disable">&raquo;</a>
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>3.塾的上课时间是什么时候？会不会和语言学校冲突？</span></h3>
-                                <p style="font-size: 16px">塾上课的时间一般为平日的六点以后与周末，不会与语言学校冲突。平日其他时间也开放自习室，欢迎同学们来自习。</p>
+                        </c:when>
+
+                        <c:when test="${page.pageNow== 1}">
+                            <div class="pagination_cont">
+                                <a href="#" class="disable" onclick="return false;">&laquo;</a>
+                                <a href="#" class="disable" onclick="return false;">&lsaquo;</a>
+                                <div class="page_num">
+                                    <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
+                                </div>
+                                <a href="questionAndAnswer.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
+                                <a href="questionAndAnswer.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
+                                
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>4.上塾周末休息吗？</span></h3>
-                                <p style="font-size: 16px">在考学的不同阶段所选择的课程有所不同，上课的时间也有不同。若是在留考对策阶段周末就没有时间就休息了，但在校内考对策阶段课程较少，自由时间相对较多。【不过即使是自由时间也得准备报考材料和完成作业，真正的休息时间是拿到录取通知书以后（笑）】</p>
+                        </c:when>
+
+                        <c:when test="${page.pageNow== page.pageCount}">
+                            <div class="pagination_cont">
+                                <a href="questionAndAnswer.html?pnow=1&type=${type}">&laquo;</a>
+                                <a href="questionAndAnswer.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
+                                <div class="page_num">
+                                    <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
+                                </div>
+                                <a href="#" class="disable" onclick="return false;">&rsaquo;</a>
+                                <a href="#" class="disable" onclick="return false;">&raquo;</a>
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>5.在日本生活中有困难塾会帮助解决吗？</span></h3>
-                                <p style="font-size: 16px">在分班后有任何生活上的问题都可以问班主任，班主任老师会尽全力帮你的！</p>
+                        </c:when>
+
+
+                        <c:otherwise>
+                            <div class="pagination_cont">
+                                <a href="questionAndAnswer.html?pnow=1&type=${type}">&laquo;</a>
+                                <a href="questionAndAnswer.html?pnow=${page.pageNow-1}&type=${type}">&lsaquo;</a>
+                                <div class="page_num">
+                                    <span>${page.pageNow}</span>/<span class="disable">${page.pageCount}</span>
+                                </div>
+                                <a href="questionAndAnswer.html?pnow=${page.pageNow+1}&type=${type}" >&rsaquo;</a>
+                                <a href="questionAndAnswer.html?pnow=${page.pageCount}&type=${type}" >&raquo;</a>
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="recommend_list_item clearfix" href="javascript:void(0)">
-                        <div class="recommend_item_cont clearfix">
-                            <div class="school_msg">
-                                <h3><span>6.上塾有没有作业？</span></h3>
-                                <p style="font-size: 16px">答案是有的，因为课堂练习时间有限，需要同学们通过家庭作业来巩固知识与熟练技巧。另外，写志望理由书等的报考材料准备性质的“家庭作业”也是不可避免的。</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
+                        </c:otherwise>
+                    </c:choose>
+                    <p>
+                        <span>每页<em>4</em>条</span>
+                        <span class="ml10">共<em>${page.nodeCount}</em>条</span>
+                    </p>
+                </div>
 
             </ul>
         </div>
-        <div class="tabs_cont none">
+
+     <%--   <div class="tabs_cont none">
             <ul>
                 <li>
                     <a class="recommend_list_item clearfix" href="javascript:void(0)">
@@ -155,7 +164,7 @@
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>8.留学需要提前多长时间准备？</span></h3>
-                                <p style="font-size: 16px">至少提前半年才不会手忙脚乱哦（笑）</p>
+                                <p style="font-size: 16px">至少提前半年才不会手忙脚乱哦</p>
                             </div>
                         </div>
                     </a>
@@ -185,7 +194,7 @@
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>11.能参加几次留学生考试？如果没考上可以继续考吗？</span></h3>
-                                <p style="font-size: 16px">在日期间内可以多次参加留学生考试，成绩会以报考学校时提交的成绩为标准判定是否录取。另外，留考分数足够高还可以拿到奖学金的哦（笑）。</p>
+                                <p style="font-size: 16px">在日期间内可以多次参加留学生考试，成绩会以报考学校时提交的成绩为标准判定是否录取。另外，留考分数足够高还可以拿到奖学金的哦。</p>
                             </div>
                         </div>
                     </a>
@@ -200,6 +209,16 @@
                         </div>
                     </a>
                 </li>
+                <div class="pagination">
+                    <div class="pagination_cont">
+                        <div class="page_num">
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(0)"  style="color:#27244E" href="javascript:void(0)">1</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(1)" style="color:#27244E" href="javascript:void(0)">2</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(2)" style="color:#27244E" href="javascript:void(0)">3</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(3)" style="color:#27244E" href="javascript:void(0)">4</a></span>
+                        </div>
+                    </div>
+                </div>
             </ul>
         </div>
         <div class="tabs_cont none">
@@ -229,7 +248,7 @@
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>15.留学需要的费用是多少？</span></h3>
-                                <p style="font-size: 16px">言学校学费平均70万日元一年，国公立大学学费50万日元左右一年,私立大学理科学费150万左右日元一年，私立大学文科学费120万左右一年。在加上生活费平均每个月一万元人民币。一年下来平均15万到20万人民币。</p>
+                                <p style="font-size: 16px">语言学校学费平均70万日元一年，国公立大学学费50万日元左右一年,私立大学理科学费150万左右日元一年，私立大学文科学费120万左右一年。在加上生活费平均每个月一万元人民币。一年下来平均15万到20万人民币。</p>
                             </div>
                         </div>
                     </a>
@@ -264,6 +283,16 @@
                         </div>
                     </a>
                 </li>
+                <div class="pagination">
+                    <div class="pagination_cont">
+                        <div class="page_num">
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(0)"  style="color:#27244E" href="javascript:void(0)">1</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(1)" style="color:#27244E" href="javascript:void(0)">2</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(2)" style="color:#27244E" href="javascript:void(0)">3</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(3)" style="color:#27244E" href="javascript:void(0)">4</a></span>
+                        </div>
+                    </div>
+                </div>
             </ul>
         </div>
         <div class="tabs_cont none">
@@ -323,7 +352,7 @@
                         <div class="recommend_item_cont clearfix">
                             <div class="school_msg">
                                 <h3><span>24.日本留学对年龄有要求吗？</span></h3>
-                                <p style="font-size: 16px">没有要求，经常还有70，80岁的爷爷奶奶上学呢（笑）</p>
+                                <p style="font-size: 16px">没有要求，经常还有70，80岁的爷爷奶奶上学呢</p>
                             </div>
                         </div>
                     </a>
@@ -348,8 +377,18 @@
                         </div>
                     </a>
                 </li>
+                <div class="pagination">
+                    <div class="pagination_cont">
+                        <div class="page_num">
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(0)"  style="color:#27244E" href="javascript:void(0)">1</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(1)" style="color:#27244E" href="javascript:void(0)">2</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(2)" style="color:#27244E" href="javascript:void(0)">3</a></span>
+                            <span style="padding-left: 10px;font-size: 35px"><a onclick="zipagec(3)" style="color:#27244E" href="javascript:void(0)">4</a></span>
+                        </div>
+                    </div>
+                </div>
             </ul>
-        </div>
+        </div>--%>
     </div>
 
     <div class="side_assess_box">
@@ -396,7 +435,6 @@
                     alert("评估成功，留意电话")
                     return true;
                 }
-
             </script>
         </div>
     </div>

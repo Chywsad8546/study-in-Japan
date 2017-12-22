@@ -1,0 +1,313 @@
+@charset "UTF-8";
+.breadcrumb {
+    width: 1200px;
+    margin: 20px auto 16px;
+    color: #66647D;
+}
+.breadcrumb > a,
+.breadcrumb > span {
+    display: inline-block;
+    line-height: 1;
+    color: #66647D;
+}
+.breadcrumb > a:hover {
+    color: #262082;
+}
+.breadcrumb > em {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tabs_cont_box {
+    position: relative;
+    width: 1200px;
+    margin: 40px auto 60px;
+}
+.tabs_cont_height {
+    float: left;
+    width: 800px;
+    min-height: 408px;
+}
+.tabs_cont {
+    width: 860px;
+}
+
+
+.news_list_item {
+    position: relative;
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #66647D;
+    background-color: #FFF;
+}
+.news_list_item > img {
+    float: left;
+    margin-right: 20px;
+}
+.news_list_item .news_item_cont {
+    float: right;
+    width: 600px;
+}
+.news_item_cont > h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 1;
+    color: #27244E;
+}
+.news_item_cont > p {
+    max-height: 80px;
+    overflow: hidden;
+}
+.news_item_cont .num_time {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: #9F9FAA;
+}
+.news_item_cont .num_time img {
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.recommend_list_item {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    color: #9F9FAA;
+    background-color: #FFF;
+}
+.recommend_list_item > img {
+    float: left;
+}
+.recommend_list_item .recommend_item_cont {
+    width: 620px;
+    padding: 25px 20px;
+    line-height: 1;
+    box-sizing: border-box;
+}
+.recommend_item_cont .school_msg {
+    width: 600px;
+}
+.school_msg > h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.school_msg > h3 > span {
+    margin-right: 20px;
+    color: #262082;
+}
+
+.school_msg > dl {
+    margin-top: 32px;
+}
+.school_msg > dl > dd {
+    float: left;
+    width: 183px;
+}
+.school_msg > dl > dd:nth-child(n+3) {
+    margin-top: 15px;
+}
+.school_msg > dl > dd > em {
+    color: #262082;
+}
+.recommend_item_cont .school_ranking {
+    float: right;
+    text-align: right;
+}
+.school_msg > p,
+.school_ranking > p {
+    line-height: 16px;
+}
+.school_msg > p {
+    color: #27244E;
+}
+.school_msg > p > img {
+    margin-top: -3px;
+    margin-right: 8px;
+}
+.school_ranking > p > img {
+    margin-top: -3px;
+    margin-right: 10px;
+}
+.school_ranking > strong {
+    display: block;
+    margin-top: 24px;
+    font-size: 48px;
+    color: #1DB169;
+}
+.recommend_item_cont .popularity_time {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+}
+.recommend_item_cont .popularity_time span {
+    font-size: 18px;
+    color: #262082;
+}
+
+.news_detail_cont {
+    padding: 40px 40px 27px;
+    background-color: #FFF;
+}
+.news_detail_cont > h2 {
+    margin-bottom: 15px;
+}
+.news_detail_cont .detail_cont_main {
+    margin-top: -10px;
+}
+.detail_cont_main > img,
+.detail_cont_main > p {
+    margin-top: 30px;
+}
+.news_detail_cont .share {
+    margin-top: 33px;
+    text-align: right;
+    color: #66647D;
+}
+.news_detail_cont .share > span {
+    position: relative;
+    top: 2px;
+}
+.news_detail_cont .share img {
+    margin-left: 11px;
+}
+
+
+.side_assess_box {
+    position: absolute;
+    right: 0;
+    width: 300px;
+}
+.side_assess_box.side_news_box {
+    width: 360px;
+}
+.side_assess_box .side_assess_main {
+    width: 300px;
+    padding: 20px 25px 30px;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+.side_assess_box .side_assess_main.fixed,
+.side_assess_box .news_detail_side.fixed {
+    position: fixed;
+    top: 40px;
+}
+.side_assess_box .side_assess_main > h2 {
+    margin-bottom: 21px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+    color: #262082;
+}
+.side_assess_box .side_assess_main input,
+.side_assess_box .side_assess_main button {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.side_assess_box .side_assess_main button:last-child {
+    margin-bottom: 0;
+}
+.side_assess_box .side_assess_main input {
+    padding: 0 12px;
+    border-color: #E7E6F4;
+}
+.side_assess_box .side_assess_main input:hover {
+    border-color: #1DB169;
+}
+.side_assess_box .side_assess_main button {
+    font-size: 16px;
+    cursor: pointer;
+}
+.side_assess_box .side_assess_main button.assess_btn {
+    color: #FFF;
+    background-color: #1DB169;
+    border-color: #1DB169;
+}
+.side_assess_box .side_assess_main button.assess_btn:hover {
+    background-color: #23D981;
+    border-color: #23D981;
+}
+.side_assess_box .side_assess_main button.online_btn {
+    color: #1DB169;
+    background-color: #FFF;
+    border-color: #1DB169;
+}
+.side_assess_box .side_assess_main button.online_btn:hover {
+    background-color: rgba(29,177,105,0.2);
+}
+
+
+.pagination {
+    position: relative;
+    height: 56px;
+    background-color: #FFF;
+}
+.pagination > p {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    color: #666;
+    font-size: 13px;
+}
+.pagination > p em {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.pagination .pagination_cont {
+    padding-top: 13px;
+    text-align: center;
+}
+.pagination .pagination_cont > a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #262082;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #262082;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.pagination .pagination_cont .page_num {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #9F9FAA;
+}
+.pagination_cont .page_num > span {
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #262082;
+}
+.pagination_cont .disable {
+    color: #9F9FAA !important;
+    border-color: #9F9FAA !important;
+}
+
+
+.side_assess_box .news_detail_side {
+    width: 360px;
+}
+.news_detail_side > h2 {
+    margin-top: 7px;
+    font-size: 24px;
+    text-align: center;
+}

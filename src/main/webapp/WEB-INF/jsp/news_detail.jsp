@@ -65,12 +65,12 @@
     <div class="tabs_cont_height">
         <div class="news_detail_cont">
             <h2>${article.title}</h2>
-            <div class="eye_num_time">
+            <div class="eye_num_time" style="padding-bottom: 20px">
                 <span><img class="new_eye_num" src="images/eye_num_icon.png" width="17" height="12" alt="查看次数">${article.hits}</span>
                 <span class="ml20">${article.updatetime}</span>
             </div>
             <div class="detail_cont_main">
-                <img src="${article.imgurl}"  alt="">
+       <%--         <img src="${article.imgurl}"  alt="">--%>
                 ${article.content}
             </div>
             <div class="share">

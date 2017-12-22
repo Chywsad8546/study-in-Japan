@@ -1,6 +1,7 @@
 package com.study.controller;
 
 import com.study.dao.HomeMapper;
+import com.study.dao.QuesAndAnswerMapper;
 import com.study.dao.RecommendSchoolMapper;
 import com.study.entity.*;
 import org.slf4j.Logger;
@@ -28,6 +29,9 @@ public class HomeController {
     @Autowired
     private HomeMapper hm;
 
+    @Autowired
+    private QuesAndAnswerMapper qm;
+
     @RequestMapping(value = "/")
     public ModelAndView homePage() {
         ModelAndView view = new ModelAndView("home");
@@ -35,10 +39,6 @@ public class HomeController {
         List<Article>newslist=hm.newslist();
         List<FriendlyLink>meiti=hm.meiti();
         List<FriendlyLink>jigou=hm.jigou();
-
-
-
-
 
         Img img=new Img();
         img.setClass1(BannerClassId.class1id);
@@ -65,11 +65,24 @@ public class HomeController {
     }
 
      @RequestMapping(value = "/questionAndAnswer.html")
-     public ModelAndView questionAndAnswer(){
+     public ModelAndView questionAndAnswer(@RequestParam(value = "pnow", defaultValue = "1", required = false)int pagenow){
           ModelAndView modelAndView =new ModelAndView("questionAndAnswer");
+
+         Page pg=new Page();
+         pg.setPageNow(pagenow);
+         pg.setStartNum((pagenow-1)*pg.getAvgPageCount());
+         int nodeCount=qm.queCount();
+         //System.out.println(nodeCount);
+         pg.setNodeCount(nodeCount);
+         pg.setPageCount(nodeCount%pg.getAvgPageCount()==0?nodeCount/pg.getAvgPageCount():nodeCount/pg.getAvgPageCount()+1);
+
+          List<QuesAndAnswer>queList=qm.quesList(pg);
+
          List<Erweima>erweimaList=hm.erweilist();
          modelAndView.addObject("url",WebAdress.url);
          modelAndView.addObject("erweimalist",erweimaList);
+         modelAndView.addObject("queList",queList);
+         modelAndView.addObject("page",pg);
           return modelAndView;
      }
     //提交评估

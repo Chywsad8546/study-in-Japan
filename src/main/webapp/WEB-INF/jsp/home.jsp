@@ -75,8 +75,8 @@
     <div class="banner_form">
         <p>免费获取专业评估，专业顾问极速响应</p>
         <form onsubmit="tijiao()" action="assess.html" class="form_group clearfix">
-            <input required="required" class="normal name" type="text" placeholder="姓名">
-            <input required="required" class="normal tel" type="tel" placeholder="电话号码" maxlength="11">
+            <input class="name" name="name" required="required" maxlength="20" type="text" placeholder="姓名">
+            <input class="tel" name="tel" required="required" type="tel" placeholder="电话号码" maxlength="11">
             <input class="button submit" type="submit" value="立即评估">
            <input onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="button inline" type="button" value="在线咨询">
             <script>
@@ -281,7 +281,7 @@
                             <li class="case_item_sort"><em>学生情况：</em><span>高中毕业</span></li>
                             <li class="case_item_sort"><em>其他科目：</em><span>中等</span></li>
                             <li class="case_item_sort"><em>录取院校：</em><span>明治大学 商学部  </span></li>
-                            <li class="case_item_sort"><em>日语：</em><span>N2</span></li>
+                            <li class="case_item_sort"><em>日语：</em><span>N1</span></li>
 
                         </ul>
                     </div>
@@ -300,7 +300,7 @@
     </div>
     <table style="width: 1200px">
         <tr>
-            <th>刘同学</th>
+            <th>学生</th>
             <th>大学</th>
             <th>留考日语</th>
             <th>能力考</th>
@@ -309,7 +309,7 @@
             <th>学科</th>
         </tr>
         <tr>
-            <th>张同学</th>
+            <th>夏同学</th>
             <td>青山学院大学</td>
             <td>311</td>
             <td>n1</td>
@@ -327,7 +327,7 @@
             <td>国际经济</td>
         </tr>
         <tr>
-            <th>肖同学</th>
+            <th>严同学</th>
             <td>中央大学</td>
             <td>296</td>
             <td>---</td>
@@ -390,7 +390,7 @@
             <td>国际文化 </td>
         </tr>
         <tr>
-            <th>徐同学</th>
+            <th>齐同学</th>
             <td>秋田大学</td>
             <td>296</td>
             <td>n1</td>
@@ -408,7 +408,7 @@
             <c:forEach var="item" items="${newslist}">
                 <li>
                     <a href="news/newsdetail.html?id=${item.id}">
-                        <div class="side_news_card ">
+                        <div class="side_news_card " style="height: 450px">
                             <img src="${url}${item.imgurl}" width="320" height="180" alt="">
                             <h4 style=" color:#66647D;">${item.title}</h4>
                             <p>${item.description}</p>
@@ -565,6 +565,31 @@
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/swiper-3.4.2.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.index_banner', {
+        autoplay: 3000,
+        loop: true,
+        // 分页器
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var CaseSwiper = new Swiper('.swiper_case', {
+        loop : true,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        nextButton: '.case_btn_next',
+        prevButton: '.case_btn_prev',
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 0,// 旋转的角度
+            stretch: 82,// 拉伸   图片间左右的间距和密集度
+            depth: 150,// 深度   切换图片间上下的间距和密集度
+            modifier: 2,// 修正值 该值越大前面的效果越明显
+            slideShadows : false// 页面阴影效果
+        }
+    });
+</script>
 <script>
     $(function(){
         console.log("qqq")
